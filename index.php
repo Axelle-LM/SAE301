@@ -125,19 +125,19 @@
 <header class="haut_de_page">
     <div class="container_titre">
         <div class="cat1">
-            <a class="sous_titre" href="#"> MMI en détail </h2>
+           <h2> <a class="sous_titre" href="#"> MMI en détail </h2>
         </div>
 
         <div class="cat2">
-            <a class="sous_titre" href="./metier.php">Les métiers après MMI </h2>
+           <h2> <a class="sous_titre" href="./metier.php">Les métiers après MMI </h2>
         </div>
 
         <div class="cat3">
-            <a class="sous_titre" href="#">Témoignages d'anciens </h2>
+           <h2> <a class="sous_titre" href="#">Témoignages d'anciens </h2>
         </div>
 
         <div class="cat4">
-            <a class="sous_titre" href="#"> Page 4 </h2>
+           <h2> <a class="sous_titre" href="#"> Page 4 </h2>
         </div>
     </div>
     
