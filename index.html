@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Page d'accueil</title>
+    <title>BUT MMI-Champs-s-Marne</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 <br>
 
 <header>
-    <div class="container_titre">
+    <nav>
         <div class="cat1">
            <h2> <a class="sous_titre" href="#"> MMI en détail </h2>
         </div>
@@ -36,7 +36,7 @@
         <div class="cat4">
            <h2> <a class="sous_titre" href="#"> International </h2>
         </div>
-    </div>
+    </nav>
     
 </header>
 
@@ -47,7 +47,6 @@
 <img class="image_accueil" src="" alt="" />
 
 <br>    <!-- mettre l'image --->
-
 
 
 <footer class="footer">
@@ -86,8 +85,10 @@
     h1 {
         color:white;
         text-align:center;
-        font-size:1rem;
+        font-size:2rem;
         width: fit-content;
+        display:flex;
+        justify-content:center;
     }
 
     h2 {
@@ -97,10 +98,9 @@
         font-size:1.5rem;
     }
 
-    .container_titre {
+    nav {
         display:flex;
         justify-content:space-evenly;
-
     }
 
     header{
