@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMI - Actualité</title>
+</head>
+<body>
+    
+<style>
+
+    .header {
+        position:relative;
+        width:1900px;
+        height:150px;
+
+    }
+
+    h1 {
+        text-align:center;
+    }
+
+    .logo {
+        display:flex;
+        flex-direction:flex-start;
+        width:200px;
+    }
+
+    .container_titre {
+        margin: -100px;
+    }
+
+    .footer {
+        background-color:#766A9D;  
+        margin:-8px;
+        padding:0;
+        position:relative;
+        height:150px;
+        top:100px;
+    }
+
+    .Titre {
+        text-align:center;
+        font-size:50px;
+        color:#766A9D;
+
+    }
+
+    .js_slider_PremiereAnnee, .js_slider_DeuxiemeAnnee {
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+
+        margin:100px;
+    }
+ 
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        width:300px;
+        height:100px;
+
+        border:solid black 2px;
+
+    }
+
+    .boutongauche_js, .boutondroite_js, .boutongauche_js2, .boutondroite_js2 {
+        display:flex;
+        align-items: center;
+
+        position:relative;
+        height:20px;
+        border-radius: 20px;
+
+
+    }
+
+    .arrow_btn_gauche, .arrow_btn_droite {
+        position:relative;
+        width:6px;
+        height:6px;
+
+        border-top: solid black 2px;
+        border-left: solid black 2px;
+
+    }
+
+    .arrow_btn_gauche {
+        transform: rotate(-45deg);
+    }
+
+    .arrow_btn_droite {
+        transform: rotate(135deg);
+    }
+
+</style>
+
+
+
+    <div class="header">
+        <div class="container_logo">
+            <img class="logo" src="./images/logo_mmi.png"/>
+        </div>
+
+        <div class="container_titre">
+            <h1 class="Titre"> Programme en MMI </h1>
+        </div>
+
+    </div>
+
+    
+    
+
+<div class="container_slider">
+
+
+    <h1> Les matières en première année </h1> 
+
+    
+    <div class="js_slider_PremiereAnnee">
+       
+        <button class="boutongauche_js">
+            <span class="arrow_btn_gauche"></span>
+        </button>
+       
+        <div class="box1">
+            <h2> Info-comm </h2>
+        </div>
+
+        <div class="box2">
+            <h2> Anglais </h2>
+        </div>
+
+        <div class="box3">
+            <h2> Marketing </h2>
+        </div>
+
+        <button class="boutondroite_js">
+            <span class="arrow_btn_droite"></span>
+        </button>
+    </div>
+
+    <h1> Spécialisation en deuxième année </h1>
+
+    <div class="js_slider_DeuxiemeAnnee">
+
+        <button class="boutongauche_js2">
+            <span class="arrow_btn_gauche"></span>
+        </button>
+
+        <div class="box4">
+            <h2> Info-comm </h2>
+        </div>
+
+        <div class="box5">
+            <h2> Anglais </h2>
+        </div>
+
+        <div class="box6">
+            <h2> Marketing </h2>
+        </div>
+
+        <button class="boutondroite_js2">
+            <span class="arrow_btn_droite"></span>
+        </button>
+    </div>
+</div>
+
+    <div class="footer">
+    </div>
+
+
+</body>
+</html>

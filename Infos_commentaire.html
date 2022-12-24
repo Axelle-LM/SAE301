@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX_Design</title>
+
+</head>
+<body>
+ 
+<style>
+
+    
+    .Sous_titre {
+        font-size:40px;
+        display:flex;
+        justify-content:center;
+
+        color:#6F60A1;
+    }
+
+    .logo {
+        display:flex;
+        flex-direction:flex-start;
+        width:200px;
+    }
+
+    .pied_de_page {
+        margin:-8px;
+      
+        height:180px;
+        background-color:#6F60A1;    
+    }
+    
+    .sous-titre1, .sous-titre2, .sous-titre3, .sous-titre4 {
+        position:relative;
+        width:200px;
+    }
+
+    .container_sous-titre1, .container_sous-titre3 {
+        display:flex;
+    }
+
+    .case_image {
+        background-color:white;
+        padding:40px;
+        position:relative;
+        margin-left:auto;     /* centrer une boite css */
+        margin-right:auto;
+        width:40rem;
+    }
+
+    .fleche{
+        position:relative;
+        width:150px;
+        height:250px;
+    }
+
+    .mega_div {
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .container_paragraphe, .container_paragraphe2, .container_paragraphe3 {
+        position:relative;
+        width:50%;
+    }
+
+    .container_contenu_footer {
+        display:flex;
+        justify-content:center;
+    }
+
+    .footer {
+        background-color:#766A9D;
+
+        position:relative;
+        top:586px;
+        height:150px;
+        width:1920px;
+        margin:-8px;
+        
+        font-size:50px;
+    }
+
+    .paragraphe {
+        font-size:35px;
+    }
+
+    .description {
+        font-size: 30px;
+    }
+
+    .container {
+        height:100%;
+        width:50%;
+        position:fixed;
+        z-index:1;
+        top:0;
+        overflow-x: hidden;
+        padding-top: 20px;
+
+    }
+
+    .gauche { 
+        left:0;
+    }
+
+    .droite{
+        right:0;
+    }
+
+    .gauche, .droite {
+        display:flex;
+        align-items: center;
+
+    }
+
+    .container, .droite{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        top:250px;
+    }
+</style>
+
+<img class="logo" src="./images/logo_mmi.png"/>
+
+<h2 class="Sous_titre"> Information / commentaire </h2>
+
+<div class="container gauche">
+    <video controls width="600">
+        <source src="???.mp4" type="video/mp4">
+    
+        <a href="/media/cc0-videos/flower.mp4"></a>
+    </video>
+</div>
+
+<div class="container droite">
+    <div class="container_commentaire">
+        <h2 class="description">
+            Description par un élève: 
+        </h2>
+
+        <p class="paragraphe">
+            .......... ..... ............. .................... <br> 
+            .................................
+        </p>
+    </div>
+
+    <div class="container_commentaire">
+        <h2 class="description">
+            Description par le prof: 
+        </h2>
+
+        <p class="paragraphe">
+            .......... ..... ............. .................... <br> 
+            .................................
+        </p>
+    </div>
+</div>
+
+<div class="footer">
+</div>
+     
+
+    
+</body>
+</html>
