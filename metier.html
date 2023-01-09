@@ -20,25 +20,25 @@
         <h1> MMI - Champ-Sur-Marne </h1>
         <nav>
             <div class="nav">
-                <a class="sous_titre" href="#"> Toutes les catégories </a>
+                 Toutes les catégories
             </div>
 
             <div class="nav">
-                <a class="sous_titre" href="metier.html">Audiovisuel </a>
+                Audiovisuel 
             </div>
 
             <div class="nav">
-                <a class="sous_titre" href="#">Développement </a>
+                Développement
             </div>
 
             <div class="nav">
-                <a class="sous_titre" href="Internationnal.html"> Marketing </a>
+                 Marketing
             </div>
         </nav>
     </header>
 
 
-<h3> Pour toute les passions et les centres d'intérêts </h3>
+<h2> Pour toute les passions et les centres d'intérêts </h2>
 
 <svg width="auto" height="50px">
     <rect width="90%" height="3" x="30" y="30" fill="grey"/>
@@ -124,10 +124,23 @@
 </div>
 
 -->
-<footer class="pied_de_page">
-
-
-</footer>
+<footer>
+        <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
+        <div class="footer">
+            <div class="Infooter">
+                <a href="#"> A Propos </a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Réseaux Sociaux</a>
+            </div>
+            <div class="Infooter">
+              <a href="#">Coordonnées secrétariat</a>
+            </div>
+            <div class="Infooter">
+               <a href="#">espace enseignant</a>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
@@ -223,15 +236,6 @@
     }
 
     h2 {
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        text-align:center;
-
-        font-size: 30px;
-    }
-
-    h3 {
         text-align:center;
         font-size:30px;
 
@@ -255,6 +259,30 @@
     .container_boite {
         display:flex;
         justify-content:space-around;
+    }
+    footer {
+        height: 20vh;
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10vh;
+    }
+
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .Infooter{
+        padding: 5px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
     }
 </style>
 </html>
