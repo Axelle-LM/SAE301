@@ -4,103 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Métiers</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-
+    <!-- OXYGEN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
+    
+    <title>Métiers</title>
 </head>
 <body>
+ <header>
+        <img class="logo" src="images/logo_mmi.png" />
 
-   
+        <h1> MMI - Champ-Sur-Marne </h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="#"> Toutes les catégories </a>
+            </div>
 
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Audiovisuel </a>
+            </div>
 
-<style>
+            <div class="nav">
+                <a class="sous_titre" href="#">Développement </a>
+            </div>
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
-    .container_titre {
-        display:flex;
-        justify-content: center;
-    }
-
-
-    .titre {
-        color:#766A9D;
-        text-align:center;
-        font-size:50px;
-    }
-
-
-    .logo {
-        position:relative;
-        height:80px;
-        width:180px;
-    }
-
-    .dark_box {
-        background-color:#BFBDBD;
-
-        position:relative;
-        width:350px;
-        height:50px;
-
-        color:black;
-
-        display:flex;
-        justify-content:center;
-
-    }
-
-    h2 {
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        text-align:center;
-
-        font-size: 30px;
-    }
-
-    h3 {
-        text-align:center;
-        font-size:30px;
-
-    }
-
-    .cat1, .cat2, .cat3, .cat4 {
-        display:flex;
-        flex-direction:column;
-    }
-
-    .pied_de_page {
-        background-color:#766A9D;
-        margin:-8px;
-
-        position:relative;
-        width:1920px;
-        height:150px;
-        top:620px;
-    }
-
-    .container_boite {
-        display:flex;
-        justify-content:space-around;
-    }
-
-
-
-</style>
-
-<div class="header">
-    <div class="container_image">
-        <img class="logo" src="./images/logo_mmi.png"></img>
-    </div>
-
-    <div class="container_titre">
-        <h1 class="titre"> Des métiers d'avenir </h1>
-    </div>
-</div>
+            <div class="nav">
+                <a class="sous_titre" href="Internationnal.html"> Marketing </a>
+            </div>
+        </nav>
+    </header>
 
 
 <h3> Pour toute les passions et les centres d'intérêts </h3>
@@ -196,4 +131,130 @@
 
 
 </body>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*::after {
+    box-sizing: border-box;
+}
+
+    body {
+        background-color: white;
+        font-family: 'Inter', 'sans-serif';
+    }
+
+    header {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        
+    }
+
+    .logo {
+        position: relative;
+        width: 10vw;
+        margin: 5px;
+    }
+
+    h1 {
+        color: #5B566C;
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0 ;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+    }
+
+    .nav {
+        position: relative;
+        width: 20%;
+        height: 10vh;
+        background-color: #DDD0C2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
+    .container_titre {
+        display:flex;
+        justify-content: center;
+    }
+
+
+    .titre {
+        color:#766A9D;
+        text-align:center;
+        font-size:50px;
+    }
+
+
+    .logo {
+        position:relative;
+        height:80px;
+        width:180px;
+    }
+
+    .dark_box {
+        background-color:#BFBDBD;
+
+        position:relative;
+        width:350px;
+        height:50px;
+
+        color:black;
+
+        display:flex;
+        justify-content:center;
+
+    }
+
+    h2 {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        text-align:center;
+
+        font-size: 30px;
+    }
+
+    h3 {
+        text-align:center;
+        font-size:30px;
+
+    }
+
+    .cat1, .cat2, .cat3, .cat4 {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .pied_de_page {
+        background-color:#766A9D;
+        margin:-8px;
+
+        position:relative;
+        width:1920px;
+        height:150px;
+        top:620px;
+    }
+
+    .container_boite {
+        display:flex;
+        justify-content:space-around;
+    }
+</style>
 </html>
