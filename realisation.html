@@ -1,196 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OXYGEN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
+
     <title>MMI - Réalisation</title>
 </head>
+
 <body>
-   
-    
+    <header>
+        <img class="logo" src="images/logo_mmi.png" />
+        <h1> Nos réalisations </h1>
+    </header>
+    <p>
+        Projet réalisés lors de la 1ère et 2ème année (la réforme du DUT qui devient BUT sur non plus 2 ans mais
+        3 ans. Nous ne sommes pas en mesure de d'afficher ceux des 3 années
+        qui ne figuret qu'en 2023-2024.)
+        *top 3 des projets à montrer par année*
+    </p>
+    <h2> 1ère année </h2>
+    <section>
+        <div class="card">
+            <div>Le projet 1</div>
+            <div><img src="vignetteResaweb.png" alt="vignette du projet 1"></div>
+        </div> <!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 2</div>
+            <div><img src="vignettedataviz1.png" alt="vignette du projet 2"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 3</div>
+            <div><img src="vignetteResaweb.png" alt="vignette du projet 3"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+    </section>
+    <h2 class="sous_titre"> 2eme année </h2>
+    <section>
+        <div class="card">
+            <div>Le projet 4</div>
+            <div><img src="vignettedataviz1.png" alt=" vignette projet 4"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 5</div>
+            <div><img src="vignettedataviz1.png" alt="vignette projet 5"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 6</div>
+            <div><img src="vignettedataviz1.png" alt="vignette projet 6"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+    </section>
+    <footer>
+        <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
+        <div class="footer">
+            <div class="Infooter">
+                <a href="#"> A Propos </a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Réseaux Sociaux</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Coordonnées secrétariat</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">espace enseignant</a>
+            </div>
+        </div>
+    </footer>
+</body>
 <style>
+    *::after {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        height: 100px;
+    }
 
+    h1 {
+        color: #5B566C;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
 
-.logo {
-    display:flex;
-    flex-direction:flex-start;
-    width:200px;
-}
+    .logo {
+        display: flex;
+        flex-direction: flex-start;
+        width: 200px;
+    }
 
-.container_paragraphe {
-    margin-left: auto;
-    margin-right: auto;
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 30px;
+    }
 
-    width:75%;
-}
+    h2 {
+        font-size: 2rem;
+        padding: 2% 5%;
+    }
+    section{
+        display: flex;
+        gap: 5%;
+        height: 50%;
+        width: 90%;
+        margin: auto;
+    }
+    div{
+        height: 100%;
+    }
+    .card {
+        width: 33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 15px;
+    }
 
-.titre {
-    color:#766A9D;
-    text-align:center;
-    font-size:50px;
-}
+    img {
+        width: 100%;
+    }
+    footer {
+        /* height: 20vh; */
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20vh;
+    }
 
-.paragraphe {
-    font-size:40px;
-}
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
 
-.pied_de_page {
-    background-color:#766A9D;
-}
+    .Infooter {
+        padding: 5px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
-.haut_du_tableau {
-    background-color: lightgrey;
-}
+    @media screen and (max-width:700px) {
+        h1 {
+            font-size: 2rem;
+        }
 
-.tableau {
-    border:black 2px solid;
-    height:450px;
-    width:300px;
-}
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5%;
+        }
+        .card{
+            width: 100%;
+            margin: 5%;
+        }
 
-.haut_du_tableau {
-    position:relative;
-
-    width:500px;
-    height:100px;
-    background-color:grey;
-
-}
-
-.Projet {
-    text-align:center;
-    font-size:35px;
-
-}
-
-
-.container_ProjetMMI1 {
-    display:flex;
-    flex-direction:flex-start;
-    justify-content:space-evenly;
-
-}
-
-.container_ProjetMMI2 {
-    display:flex;
-    flex-direction:flex-start;
-    justify-content:space-evenly;
-
-}
-
-.sous_titre{
-    font-size:50px;
-    text-align:center;
-}
-
-
-.hautdutableau {
-    border: solid 2px black;
-}
-
-.footer {
-    background-color:#766A9D;
-
-    position:relative;
-    top:300px;
-    height:150px;
-    width:1903px;
-    margin:-8px;
-    
-    font-size:50px;
-}
-
+        .footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+    }
 </style>
 
-
-<div class="header">
-    <img class="logo" src ="images/logo_mmi.png" />  
-    <h1 class="titre"> Nos réalisations </h1>
-</div>
-
-<div class="container_paragraphe">
-    <p class="paragraphe">
-        Projet réalisés lors de la 1ère et 2ème année (la réforme du DUT qui devient BUT sur non plus 2 ans mais 3 ans. Nous ne sommes pas en mesure de d'afficher ceux des 3 années
-        qui ne figuret qu'en 2023-2024.)
-        *top 3 des projets à montrer par année* 
-    </p>
-</div>
-
-<h2 class="sous_titre"> 1ère année </h2>
-
-<div class="container_ProjetMMI">
-    <div class="container_ProjetMMI1">
-        <div class="tableau">
-            <div class="hautdutableau">
-                <h3 class="Projet"> SAE - Interview </h3>
-            </div>
-            <div class="basdutableau">
-                    
-            </div>
-        </div> 
-        
-        <div class="tableau">
-            <div class="hautdutableau">
-                <h3 class="Projet"> Affiche des Arts Foreztiers </h3>
-            </div>
-            <div class="basdutableau">
-                    
-            </div>
-        </div>
-        
-        <div class="tableau">
-            <div class="hautdutableau">
-                <h3 class="Projet"> SAE - Site de réservation </h3>
-            </div>
-            <div class="basdutableau">
-                    
-            </div>
-        </div>
-    </div>
-</div>
-
-<h2 class="sous_titre"> 2eme année </h2>
-
-    <div class="container_ProjetMMI2">
-        <div class="tableau">
-            <div class="hautdutableau">
-                <h3 class="Projet"> SAE - Dataviz </h3>
-            </div>
-            <div class="basdutableau">
-                    
-            </div>
-        </div> 
-        
-        <div class="tableau">
-            <div class="hautdutableau">
-                <h3 class="Projet"> </h3>
-            </div>
-            <div class="basdutableau">
-                    
-            </div>
-        </div>
-        
-        <div class="container_ProjetMMI2">
-            <div class="tableau">
-                <div class="hautdutableau">
-                    <h3 class="Projet"> </h3>
-                </div>
-                <div class="basdutableau">      
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
-
-
-<div class="footer">
-
-</div>
-
-
-
-</body>
 </html>
