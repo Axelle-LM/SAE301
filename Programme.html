@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
 
-    <title>MMI - En détail</title>
+    <title>MMI - Actualité</title>
 </head>
 
 <body>
@@ -33,32 +33,32 @@
 
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Marketing</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Anglais</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Gestion de projet</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Intégration</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Culture artistique</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">PPP</div>
                     </a>
                 </div>
             </div>
@@ -77,32 +77,32 @@
 
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Marketing</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Anglais</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Gestion de projet</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Intégration</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">Culture artistique</div>
                     </a>
                 </div>
                 <div class="js-photo">
                     <a href="#">
-                        <img class="photo" src="ux.jpg" alt="">
+                        <div class="matiere">PPP</div>
                     </a>
                 </div>
             </div>
@@ -133,6 +133,9 @@
 </body>
 
 <style>
+    *::after {
+        box-sizing: border-box;
+    }
     header {
         position: relative;
         width: 100%;
@@ -223,7 +226,7 @@
 
     .js-photo {
         position: relative;
-        width: 30%;
+        width: 50%;
         /* height: 340px; */
         margin: 0;
         padding: 0;
@@ -252,9 +255,15 @@
         left: 0px;
     }
 
-    .photo {
-        width: 10vw;
-        height: 100%;
+    .matiere {
+        width: 30vw;
+        height: 10vh;
+        background-color: #5B566C;
+        text-align: center;
+        color: white;
+        border: solid black 2px;
+        font-size: 1.7rem;
+        padding: 15px;
     }
 
     @media screen and (max-width:700px) {
@@ -266,6 +275,15 @@
             flex-direction: column;
             font-size: 1.2rem;
             padding: 5px;
+        }
+        .matiere{
+            width: 30vw;
+            height: 15vh;
+            font-size: 120%;
+            padding: 15px 0;
+        }
+        .js-photo{
+            width: 70%;
         }
 
 
