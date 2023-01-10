@@ -1,177 +1,333 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-utilities.css">
+    <link rel="stylesheet" href="bootstrap-reboot.css">
+
+<!-- OXYGEN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
+
     <title>MMI - Actualité</title>
 </head>
-<body>
-    
-<style>
 
-    .header {
-        position:relative;
-        width:1900px;
-        height:150px;
+<body>
+    <header>
+        <img class="logo" src="images/logo_mmi.png" />
+
+        <h1>Programme en MMI </h1>
+    </header>
+
+    <main>
+        <h2>1e année</h2>
+        <!-- slider photos -->
+        <section class="slider">
+            <div class="js-photos">
+
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <section class="slidebouton">
+                <button class="BtnDecalDroite"><-</button>
+                <button class="BtnDecalGauche">-></button>
+            </section>
+        </section>
+
+</main>
+<main>
+
+        <h2>2e année</h2>
+        <section class="slider">
+            <div class="js-photos">
+
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+                <div class="js-photo">
+                    <a href="#">
+                        <img class="photo" src="ux.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <section class="slidebouton">
+                <button class="BtnDecalDroite"><-</button>
+                <button class="BtnDecalGauche">-></button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
+        <div class="footer">
+            <div class="Infooter">
+                <a href="#"> A Propos </a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Réseaux Sociaux</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Coordonnées secrétariat</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">espace enseignant</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<style>
+    header {
+        position: relative;
+        width: 100%;
+        /* height: 150px; */
 
     }
 
     h1 {
-        text-align:center;
+        color: #5B566C;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    h2{
+        margin: 10px 20px;
     }
 
     .logo {
-        display:flex;
-        flex-direction:flex-start;
-        width:200px;
+        display: flex;
+        flex-direction: flex-start;
+        width: 200px;
+    }
+    main{
+        position: relative;
+        top: 20vh;
     }
 
-    .container_titre {
-        margin: -100px;
+    footer {
+        /* height: 20vh; */
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20vh;
     }
 
     .footer {
-        background-color:#766A9D;  
-        margin:-8px;
-        padding:0;
-        position:relative;
-        height:150px;
-        top:100px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
     }
 
-    .Titre {
-        text-align:center;
-        font-size:50px;
-        color:#766A9D;
-
+    .Infooter {
+        padding: 5px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
     }
 
-    .js_slider_PremiereAnnee, .js_slider_DeuxiemeAnnee {
-        display:flex;
-        align-items:center;
-        justify-content:space-evenly;
 
-        margin:100px;
-    }
- 
-    .box1, .box2, .box3, .box4, .box5, .box6 {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-
-        width:300px;
-        height:100px;
-
-        border:solid black 2px;
-
-    }
-
-    .boutongauche_js, .boutondroite_js, .boutongauche_js2, .boutondroite_js2 {
+    /* LE SLIDER */
+    .slider {
+        overflow-x: scroll;
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        margin: auto;
         display:flex;
         align-items: center;
+    }
 
-        position:relative;
-        height:20px;
-        border-radius: 20px;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .js-photos {
+        position: absolute;
+        width: 90%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        transition: left 0.6s ease-out;
+        border-radius: 0;
+    }
+
+    .js-photos.no-anime {
+        transition: none;
+    }
+
+    .js-photo {
+        position: relative;
+        width: 30%;
+        /* height: 340px; */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+    }
+
+    .slidebouton{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* position: fixed; */
+        top: 40%;
+    }
+    .BtnDecalGauche {
+        position: absolute;
+        
+        right: 0px;
+    }
+    .BtnDecalDroite {
+        position: absolute;
+        left: 0px;
+    }
+
+    .photo {
+        width: 10vw;
+        height: 100%;
+    }
+
+    @media screen and (max-width:700px) {
+        h1{
+            font-size: 2rem;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
+        }
 
 
     }
-
-    .arrow_btn_gauche, .arrow_btn_droite {
-        position:relative;
-        width:6px;
-        height:6px;
-
-        border-top: solid black 2px;
-        border-left: solid black 2px;
-
-    }
-
-    .arrow_btn_gauche {
-        transform: rotate(-45deg);
-    }
-
-    .arrow_btn_droite {
-        transform: rotate(135deg);
-    }
-
+    
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var photosWrapper = document.querySelector('.js-photos');
+        var photos = document.querySelectorAll('.js-photo');
+        var photoWidth = photos[0].offsetWidth; // 500px
 
+        var btnDecaleGauche = document.querySelector('.BtnDecalGauche');
+        var btnDecaleDroite = document.querySelector('.BtnDecalDroite');
 
+        // position slide courante
+        var position = -1;
+        var minPosition = -1;
+        var maxPosition = photos.length - 10;
 
-    <div class="header">
-        <div class="container_logo">
-            <img class="logo" src="./images/logo_mmi.png"/>
-        </div>
+        function decaleGauche() {
+            position++;
 
-        <div class="container_titre">
-            <h1 class="Titre"> Programme en MMI </h1>
-        </div>
+            if (position > maxPosition) {
+                retourDebut();
+                setTimeout(function () {
+                    photosWrapper.classList.remove('no-anime'); // on remet la transition animÃ©e en place
+                    decaleGauche(); // on passe du clone Ã  la slide rÃ©ellement souhaitÃ©e avec l'animation
+                }, 20);
+            } else {
+                photosWrapper.style.left = position * -photoWidth + "px";
+            }
+        }
 
-    </div>
+        function decaleDroite() {
+            position--;
 
-    
-    
+            if (position < minPosition) {
+                retourFin();
+                setTimeout(function () {
+                    photosWrapper.classList.remove('no-anime'); // on remet la transition animÃ©e en place
+                    decaleDroite(); // on passe du clone Ã  la slide rÃ©ellement souhaitÃ©e avec l'animation
+                }, 20);
+            } else {
+                photosWrapper.style.left = position * -photoWidth + "px";
+            }
+        }
 
-<div class="container_slider">
+        function retourDebut() {
+            position = minPosition - 0;
+            photosWrapper.classList.add('no-anime'); // on empÃ¨che la transition animÃ©e
+            photosWrapper.style.left = position * -photoWidth + "px"; // on saute sur le clone
+        }
 
+        function retourFin() {
+            position = maxPosition + 1;
+            photosWrapper.classList.add('no-anime'); // on empÃ¨che la transition animÃ©e
+            photosWrapper.style.left = position * -photoWidth + "px"; // on saute sur le clone
+        }
 
-    <h1> Les matières en première année </h1> 
-
-    
-    <div class="js_slider_PremiereAnnee">
-       
-        <button class="boutongauche_js">
-            <span class="arrow_btn_gauche"></span>
-        </button>
-       
-        <div class="box1">
-            <h2> Info-comm </h2>
-        </div>
-
-        <div class="box2">
-            <h2> Anglais </h2>
-        </div>
-
-        <div class="box3">
-            <h2> Marketing </h2>
-        </div>
-
-        <button class="boutondroite_js">
-            <span class="arrow_btn_droite"></span>
-        </button>
-    </div>
-
-    <h1> Spécialisation en deuxième année </h1>
-
-    <div class="js_slider_DeuxiemeAnnee">
-
-        <button class="boutongauche_js2">
-            <span class="arrow_btn_gauche"></span>
-        </button>
-
-        <div class="box4">
-            <h2> Info-comm </h2>
-        </div>
-
-        <div class="box5">
-            <h2> Anglais </h2>
-        </div>
-
-        <div class="box6">
-            <h2> Marketing </h2>
-        </div>
-
-        <button class="boutondroite_js2">
-            <span class="arrow_btn_droite"></span>
-        </button>
-    </div>
-</div>
-
-    <div class="footer">
-    </div>
-
-
-</body>
+        btnDecaleGauche.addEventListener('click', decaleGauche);
+        btnDecaleDroite.addEventListener('click', decaleDroite);
+    });
+</script>
 </html>
