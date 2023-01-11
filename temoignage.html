@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- OXYGEN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
+    <title>MMI-Témoignages
+    </title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo"></a>
+        <h1> Témoignages </h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="Programme.html"> MMI en détail </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="International.html"> International </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class=""><p>témoignage 1</p></div>
+            <div><p>témoignage 1</p></div>
+        </section>
+        <section>
+            <div>temoignage</div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
+        <div class="footer">
+            <div class="Infooter">
+                <a href="#"> A Propos </a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Réseaux Sociaux</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Coordonnées secrétariat</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">espace enseignant</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+    *::after {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: white;
+        font-family: 'Inter', 'sans-serif';
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        /* height: 150px; */
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: flex-start;
+        width: 100px;
+        height: 80px;
+        background-image: url(/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 40px 0px;
+    }
+    .nav {
+        position: relative;
+        width: 20%;
+        height: 10vh;
+        /* background-color: #DDD0C2; */
+        border: #DDD0C2 solid 2px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav:hover{
+     background-color: #DDD0C2;
+     font-weight: 700;
+    }
+
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
+    h1 {
+        color: #5B566C;
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    section{
+        display: flex;
+    }
+
+
+    footer {
+        /* height: 20vh; */
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20vh;
+    }
+
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .Infooter {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    @media screen and (max-width:700px) {
+        .logo {
+            background-image: url(/faviconmmi.png);
+            width: 100px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+
+
+    }
+
+    @media screen and (max-width:500px) {
+        .logo {
+            background-image: url(/Minimmi.png);
+            width: 50px;
+        }
+
+    }
+</style>
+</html>
