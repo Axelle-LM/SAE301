@@ -20,7 +20,7 @@
 <body>
 
     <header>
-        <img class="logo" src="images/logo_mmi.png" />
+        <img class="logo" ><a href="index.html"></a></img>
 
         <h1> MMI - Champ-Sur-Marne </h1>
         <nav>
@@ -96,9 +96,14 @@
     }
 
     .logo {
-        position: relative;
-        width: 10vw;
-        margin: 5px;
+        display: flex;
+        flex-direction: flex-start;
+        width: 200px;
+        height: 100px;
+        background-image: url(images/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
     }
 
     h1 {
@@ -189,6 +194,10 @@
         color: white;
     }
     @media screen and (max-width:700px) {
+        .logo{
+            background-image: url(images/faviconmmi.png);
+            width: 100px;
+        }
         header{
             height:350px;
             width:100%;
@@ -222,6 +231,13 @@
             font-size: 1.2rem;
             padding: 5px;
         }
+    }
+    @media screen and (max-width:500px) {
+        .logo{
+            background-image:url(images/Minimmi.png);
+            width: 50px;
+        }
+        
     }
 </style>
 
