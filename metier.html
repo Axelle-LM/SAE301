@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="images/logo_mmi.png" alt="retour accueil"/> </a>
+        <img class="logo" ><a href="301Metiers.html"></a></img>
 
         <h1> Des métiers d'avenir</h1>
         <h2> Pour toute les passions et les centres d'intérêts </h2>
@@ -83,7 +83,7 @@
             </div>
 
             <div class="container_image">
-                <img src="images/ux2.jpg" alt="">
+                <img src="ux2.jpg" alt="">
             </div>
 
             <div class="container_image">
@@ -128,8 +128,6 @@
 
 </body>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-
     *::after {
         box-sizing: border-box;
     }
@@ -141,19 +139,26 @@
         height: 100vh;
         margin: auto;
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
     header {
         /*position: absolute;*/
-        height: 100px;
+        height: 100%;
         width: 100%;
 
     }
 
     .logo {
-        position: relative;
-        width: 10vw;
-        margin: 5px;
+        display: flex;
+        flex-direction: flex-start;
+        width: 200px;
+        height: 100px;
+        background-image: url(images/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
     }
 
     h1 {
@@ -161,42 +166,40 @@
         text-align: center;
         font-size: 4rem;
         font-family: 'Oxygen';
-        position: absolute;
         font-weight: 800;
-        top: 2vh;
         width: 100%;
-        margin: 0 0 5px 0;
+        margin: 10px 0;
     }
 
     nav {
         display: flex;
         justify-content: space-evenly;
         margin: 30px 0px;
-        position: relative;
-        top: 100px;
+        /* position: relative; */
+        /* top: 100px; */
     }
 
     .nav {
         position: relative;
         width: 20%;
         height: 10vh;
-        background-color: #DDD0C2;
+        /* background-color: #DDD0C2; */
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: solid rgb(121, 82, 27) 4px;
+        border: solid #DDD0C2 2px;
         font-size: 1.5rem;
     }
 
     .nav:hover{
-            font-size: 2rem;
-        }
-
+     background-color: #DDD0C2;
+     font-weight: 700;
+    }
     main{
         width: 90%;
         margin: auto;
-        position: relative;
+        /* position: relative; */
         top: 150px;
 
     }
@@ -215,15 +218,10 @@
     }
 
 
-    .logo {
-        position: relative;
-        height: 80px;
-        width: 180px;
-    }
 
     h2 {
         text-align: center;
-        font-size: 30px;
+        font-size: 2rem;
 
     }
 
@@ -250,7 +248,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 20vh;
+        top: 10vh;
     }
 
     .footer {
@@ -272,6 +270,10 @@
 
 
     @media screen and (max-width:700px) {
+        .logo{
+            background-image: url(images/faviconmmi.png);
+            width: 100px;
+        }
         h1{
             font-size: 2rem;
         }
@@ -295,6 +297,15 @@
             font-size: 1.2rem;
             padding: 5px;
         }
+
+
+    }
+    @media screen and (max-width:500px) {
+        .logo{
+            background-image:url(images/Minimmi.png);
+            width: 50px;
+        }
+        
     }
 </style>
 
