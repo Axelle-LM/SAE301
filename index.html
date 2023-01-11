@@ -84,10 +84,12 @@
     body {
         background-color: white;
         font-family: 'Inter', 'sans-serif';
+        height:100%;
+        display:flex;
+        flex-direction:column;
     }
 
     header {
-        position: absolute;
         height: 100px;
         width: 100%;
         
@@ -118,9 +120,8 @@
     }
 
     .nav {
-        position: relative;
         width: 20%;
-        height: 10vh;
+        min-height: 10vh;
         background-color: #DDD0C2;
         text-align: center;
         display: flex;
@@ -167,7 +168,6 @@
 
 
     footer {
-        height: 20vh;
         width: 100%;
         background-color: #5B566C;
         display: flex;
