@@ -22,7 +22,7 @@
     <header>
         <img class="logo" src="images/logo_mmi.png" />
 
-        <h1>En détail: le programme</h1>
+        <h1>En détail : le programme</h1>
     </header>
 
     <main>
@@ -111,6 +111,43 @@
                 <button class="BtnDecalGauche">-></button>
             </section>
         </section>
+            <h3> Les réalisations des étudiant.e.s </h3>
+    <p>
+        Projet réalisés lors de la 1ère et 2ème année (la réforme du DUT qui devient BUT sur non plus 2 ans mais
+        3 ans. Nous ne sommes pas en mesure de d'afficher ceux des 3 années
+        qui ne figuret qu'en 2023-2024.)
+        *top 3 des projets à montrer par année*
+    </p>
+    <h2> 1ère année </h2>
+    <section>
+        <div class="card">
+            <div>Le projet 1</div>
+            <div><img src="vignetteResaweb.png" alt="vignette du projet 1"></div>
+        </div> <!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 2</div>
+            <div><img src="vignettedataviz1.png" alt="vignette du projet 2"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 3</div>
+            <div><img src="vignetteResaweb.png" alt="vignette du projet 3"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+    </section>
+    <h2 class="sous_titre"> 2eme année </h2>
+    <section>
+        <div class="card">
+            <div>Le projet 4</div>
+            <div><img src="vignettedataviz1.png" alt=" vignette projet 4"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 5</div>
+            <div><img src="vignettedataviz1.png" alt="vignette projet 5"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+        <div class="card">
+            <div>Le projet 6</div>
+            <div><img src="vignettedataviz1.png" alt="vignette projet 6"></div>
+        </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+    </section>
     </main>
     <footer>
         <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
@@ -142,6 +179,37 @@
         /* height: 150px; */
 
     }
+    .logo {
+        width: 10%;
+        margin: 10px;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 40px 0px;
+    }
+    .nav {
+        position: relative;
+        width: 20%;
+        height: 10vh;
+        /* background-color: #DDD0C2; */
+        border: #DDD0C2 solid 2px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav:hover{
+     background-color: #DDD0C2;
+     font-weight: 700;
+    }
+
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
 
     h1 {
         color: #5B566C;
@@ -154,18 +222,50 @@
         width: 100%;
         margin: 0 0 5px 0;
     }
-    h2{
+
+    h2 {
         margin: 10px 20px;
     }
 
-    .logo {
-        display: flex;
-        flex-direction: flex-start;
-        width: 200px;
-    }
-    main{
+    main {
         position: relative;
-        top: 20vh;
+        /* top: 20vh; */
+        margin: 60px 0;
+    }
+
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 30px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding: 2% 5%;
+        text-align: center;
+    }
+    section{
+        display: flex;
+        gap: 5%;
+        height: 50%;
+        width: 90%;
+        margin: 20px auto;
+    }
+    div{
+        height: 100%;
+    }
+    .card {
+        width: 33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 15px;
+        border: none;
+    }
+
+    img {
+        width: 100%;
     }
 
     footer {
@@ -175,7 +275,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 20vh;
+        /* top: 20vh; */
     }
 
     .footer {
@@ -189,6 +289,7 @@
     .Infooter {
         padding: 5px;
     }
+
     a {
         text-decoration: none;
         color: white;
@@ -200,9 +301,9 @@
         overflow-x: scroll;
         position: relative;
         width: 100%;
-        height: 30vh;
+        height: 20vh;
         margin: auto;
-        display:flex;
+        display: flex;
         align-items: center;
     }
 
@@ -226,7 +327,7 @@
 
     .js-photo {
         position: relative;
-        width: 50%;
+        width: 40%;
         /* height: 340px; */
         margin: 0;
         padding: 0;
@@ -236,7 +337,7 @@
         flex: none;
     }
 
-    .slidebouton{
+    .slidebouton {
         width: 100%;
         height: 20%;
         display: flex;
@@ -245,18 +346,20 @@
         /* position: fixed; */
         top: 40%;
     }
+
     .BtnDecalGauche {
         position: absolute;
-        
+
         right: 0px;
     }
+
     .BtnDecalDroite {
         position: absolute;
         left: 0px;
     }
 
     .matiere {
-        width: 30vw;
+        min-width: 20vw;
         height: 10vh;
         background-color: #5B566C;
         text-align: center;
@@ -267,28 +370,69 @@
     }
 
     @media screen and (max-width:700px) {
-        h1{
+        h1 {
             font-size: 2rem;
         }
-        .footer{
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        .nav{
+            width: 100%;
+            
+        }
+        
+        .footer {
             display: flex;
             flex-direction: column;
             font-size: 1.2rem;
             padding: 5px;
         }
-        .matiere{
+
+        .matiere {
             width: 30vw;
             height: 15vh;
             font-size: 120%;
-            padding: 15px 0;
+            padding: 25px 0;
         }
-        .js-photo{
+
+        .js-photo {
             width: 70%;
+        }
+
+        .logo{
+            background-image: url(/faviconmmi.png);
+            width: 100px;
+        }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5%;
+        }
+        .card{
+            width: 100%;
+            margin: 5%;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
         }
 
 
     }
-    
+    @media screen and (max-width:500px) {
+        .logo{
+            background-image:url(/Minimmi.png);
+            width: 50px;
+        }
+        
+    }
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
