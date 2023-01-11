@@ -22,30 +22,43 @@
         <a href="index.html"><img class="logo"></a>
 
         <h1> Des métiers d'avenir</h1>
-        <h2> Pour toute les passions et les centres d'intérêts </h2>
+        <nav>
+            <div class="nav">
+                MMI en détail
+            </div>
 
-        <svg width="auto" height="50px">
-            <rect width="90%" height="3" x="30" y="30" fill="grey" />
-        </svg>
+            <div class="nav">
+                Témoignages
+            </div>
+
+            <div class="nav">
+                International
+            </div>
+        </nav>
+
+        <div class="separateur"></div>
+        <h2> Pour toutes les passions et les centres d'intérêts </h2>
+
+        <nav class="tri">
+            <div class="categorie">
+                Toutes les catégories
+            </div>
+
+            <div class="categorie">
+                Audiovisuel
+            </div>
+
+            <div class="categorie">
+                Développement
+            </div>
+
+            <div class="categorie">
+                Marketing
+            </div>
+
+        </nav>
+        
     </header>
-
-    <nav>
-        <div class="nav">
-            Toutes les catégories
-        </div>
-
-        <div class="nav">
-            Audiovisuel
-        </div>
-
-        <div class="nav">
-            Développement
-        </div>
-
-        <div class="nav">
-            Marketing
-        </div>
-    </nav>
 
     <main>
 
@@ -83,7 +96,7 @@
             </div>
 
             <div class="container_image">
-                <img src="ux2.jpg" alt="">
+                <img src="images/ux2.jpg" alt="">
             </div>
 
             <div class="container_image">
@@ -150,6 +163,13 @@
 
     }
 
+    .separateur {
+        width: 70%;
+        height: 2px;
+        margin: auto;
+        background-color: #5B566C;
+    }
+
     .logo {
         display: flex;
         flex-direction: flex-start;
@@ -159,8 +179,8 @@
         background-size: contain;
         background-repeat: no-repeat;
         border: none;
-        position:relative;
-        z-index:1000;
+        position: relative;
+        z-index: 1000;
     }
 
     h1 {
@@ -170,7 +190,7 @@
         font-family: 'Oxygen';
         font-weight: 800;
         width: 100%;
-        margin: 10px 0;
+        margin: 20px 0;
         position: absolute;
         top: 0vh;
     }
@@ -178,7 +198,7 @@
     nav {
         display: flex;
         justify-content: space-evenly;
-        margin: 30px 0px;
+        margin: 70px 0px  50px 0;
         /* position: relative; */
         /* top: 100px; */
     }
@@ -196,9 +216,27 @@
         font-size: 1.5rem;
     }
 
-    .nav:hover{
-     background-color: #DDD0C2;
-     font-weight: 700;
+    .nav:hover {
+        background-color: #DDD0C2;
+        font-weight: 700;
+    }
+
+    .tri {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+    }
+
+    .categorie {
+        width: 20%;
+        min-height: 10vh;
+        background-color: #5B566C;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
     }
 
     .sous_titre {
@@ -206,7 +244,8 @@
         text-decoration: none;
         color: black;
     }
-    main{
+
+    main {
         width: 90%;
         margin: auto;
         /* position: relative; */
@@ -280,42 +319,44 @@
 
 
     @media screen and (max-width:700px) {
-        .logo{
+        .logo {
             background-image: url(images/faviconmmi.png);
             width: 100px;
         }
-        h1{
+
+        h1 {
             font-size: 2rem;
         }
-        nav{
+
+        nav {
             display: flex;
             flex-direction: column;
             gap: 1px;
         }
-        .nav{
+
+        .nav {
             width: 100%;
-            
+
         }
-        
-        .container{
+
+        .container {
             display: flex;
             flex-direction: column;
         }
-        .footer{
+
+        .footer {
             display: flex;
             flex-direction: column;
             font-size: 1.2rem;
             padding: 5px;
         }
 
-
     }
     @media screen and (max-width:500px) {
-        .logo{
-            background-image:url(images/Minimmi.png);
+        .logo {
+            background-image: url(images/Minimmi.png);
             width: 50px;
         }
-        
     }
 </style>
 
