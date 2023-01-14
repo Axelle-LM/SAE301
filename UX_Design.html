@@ -13,25 +13,16 @@
 
 </head>
 <body>
- 
+<h1> UX Designer </h1>
 
-
-<img class="logo" src="./images/logo_mmi.png"/>
-
-<h2 class="Sous_titre"> UX Designer </h2>
-
-
-<p class ="paragraphe1">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p> 
-
-<p class="paragraphe2">
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-</p>
-
-<p class="paragraphe3">
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<main>
+    <div>
+        <video></video>
+    </div>
+        <div class="text">
+            <p> blabla</p>
+        </div>
+    </main>
 
 <footer>
         <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
@@ -86,80 +77,17 @@
         border: none;
     }
 
-    .Sous_titre {
-        font-size:64px;
-        margin-top:auto;
-
-        display:flex;
-        justify-content:center;
-
-        color: #6F60A1;
-    }
 
     .logo {
         display:flex;
         flex-direction:flex-start;
         width:200px;
     }
-
-    .pied_de_page {
-        margin:-8px;
-      
-        height:193px;
-        background-color:#6F60A1; 
-        
-    }
-    
-    .sous-titre1, .sous-titre2, .sous-titre3, .sous-titre4 {
-        position:relative;
-        width:200px;
-    }
-
-    .container_sous-titre1, .container_sous-titre3 {
-        display:flex;
-    }
-
-    .case_image {
-        background-color:white;
-        padding:40px;
-        position:relative;
-        margin-left:auto;     /* centrer une boite css */
-        margin-right:auto;
-        width:40rem;
-    }
-
-    .fleche{
-        position:relative;
-        width:150px;
-        height:200px;
-    }
-
-    .mega_div {
-        display:flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .container_paragraphe, .container_paragraphe2, .container_paragraphe3 {
-        position:relative;
-        width:50%;
-    }
-
-    .container_contenu_footer {
-        display:flex;
-        justify-content:center;
-    }
-
-    .paragraphe1, .paragraphe2, .paragraphe3 {
-        font-size:40px;
-        width:80%;
-
-        margin-left: auto;
-        margin-right: auto;
-
-        display:flex;
-        justify-content: center;
+     main{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3%;
+        padding: 0 5%;
     }
 
    footer {
@@ -189,16 +117,23 @@
         color: white;
 
     }
-
     @media screen and (max-width:700px) {
         .logo {
             background-image: url(images/Minimmi.png);
             width: 50px;
         }
         
-
         h1 {
             font-size: 2rem;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            width:100%;
+            height:50%;
         }
    
         .footer {
