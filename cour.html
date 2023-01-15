@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OXYGEN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="faviconmmi.png" type="image/x-icon">
+    <title>MMI-matiere</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html"><img class="logo"></a>
+        <h1>matiere</h1>
+    </header>
+    
+    <main>
+        <div>
+            <iframe src="" frameborder="0">ici lien video</iframe>
+        </div>
+        <div class="text">
+            <p></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
+        <div class="footer">
+            <div class="Infooter">
+                <a href="#"> A Propos </a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Réseaux Sociaux</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">Coordonnées secrétariat</a>
+            </div>
+            <div class="Infooter">
+                <a href="#">espace enseignant</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<style>
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        font-family: 'Inter', 'sans-serif';
+        height: 100vh;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: flex-start;
+        width: 100px;
+        height: 80px;
+        background-image: url(images/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        margin: 0;
+    }
+
+    
+
+    h1 {
+        color: #5B566C;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3%;
+        padding: 0 5%;
+    }
+
+    div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        border: black solid 10px; /* juste pour voir les div le temps de mettre le contenu */
+    }
+    .text{
+        display: flex;
+        align-items: flex-start;
+        margin: 50px 0px;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    footer {
+        /* height: 20vh; */
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        /* top: 20vh; */
+    }
+
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .Infooter {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+    }
+    @media screen and (max-width:700px) {
+        .logo {
+            background-image: url(images/Minimmi.png);
+            width: 50px;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            width:100%;
+            height:50%;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+    }
+</style>
+
+</html>
