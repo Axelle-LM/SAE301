@@ -7,8 +7,7 @@
     $titre = $_POST['titre_actu'];
 
     $db=new PDO('mysql:host=localhost;dbname=imdb;port=3306;charset=utf8', 'root', '');
-    $stmt=$db ->query("INSERT INTO sae301_actualite VALUES ('NULL','$titre', '$auteur', '$date', '$img', '$texte')");
-?>
+    $stmt=$db->query("INSERT INTO sae301_actualite VALUES ('NULL','$titre', '$auteur', '$date', '$img', '$texte')");?>
 <h3> Actualité </h3>
 <form method="post">
 
