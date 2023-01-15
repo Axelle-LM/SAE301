@@ -8,32 +8,25 @@
   <title>Document</title>
 </head>
 <body>
-  
-<div class="card">
-  
-<?php
-   $db=new PDO('mysql:host=localhost;dbname=imdb;port=3306;charset=utf8', 'root', '');
-   $stmt = $db -> query ('SELECT * FROM sae301_actualite');
-   $result = $stmt -> fetchall();
-
-   foreach ($result as $actualite){
-    echo "
-        <div class='contenu_card'>
-          <div class='card_header'>
-            <img src='{$actualite["img_actu"]}' alt='card__image' class='card__image' width='350'>
-          </div>
-
-          <div class='card_body'>
-            <h4 class='titre'>{$actualite["titre_actu"]}</h4>
-            <p>{$actualite["texte_actu"]}</p>
-            <h5>{$actualite["auteur_actu"]}</h5>
-            <small>{$actualite["date_actu"]}</small>
-          </div>
-        </div>
-";
-}
-?>
+  <div class="card">
+    <?php
+      $db=new PDO('mysql:host=localhost;dbname=imdb;port=3306;charset=utf8', 'root', '');
+      $stmt = $db -> query ('SELECT * FROM sae301_actualite');
+      $result = $stmt -> fetchall();
+      foreach ($result as $actualite){
+        echo "
+          <div class='contenu_card'>
+            <div class='card_header'>
+              <img src='{$actualite["img_actu"]}' alt='card__image' class='card__image' width='350'>
+            </div>
+            <div class='card_body'>
+              <h4 class='titre'>{$actualite["titre_actu"]}</h4>
+              <p>{$actualite["texte_actu"]}</p>
+              <h5>{$actualite["auteur_actu"]}</h5>
+              <small>{$actualite["date_actu"]}</small>
+            </div>
+          </div>";
+     }?>
   </div>
-
 </body>
 </html>
