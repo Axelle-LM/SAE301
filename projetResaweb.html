@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OXYGEN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
+    <title>MMI-Projet Resaweb</title>
+</head>
+<body>
+  <header>
+        <a href="index.html"><img class="logo"></a>
+
+        <h1>Projet Resaweb</h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="detail.html"> MMI en détail </a>
+            </div>
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+            <div class="nav">
+                <a class="sous_titre" href="temoignage.html">Témoignages</a>
+            </div>
+            <div class="nav">
+                <a class="sous_titre" href="international.html"> International </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <a href="https://resaweb.fabert.butmmi.o2switch.site/" target="_blank">
+                <div class="imageLien">
+                    Voir le site ↗
+                </div>
+            </a>
+        </div>
+        <div class="text">
+            <p>Ce projet avait pour objectif de réalisé, sur Wordpress, le site d'une association caritative.</p>
+        </div>
+    </main>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        font-family: 'Inter', 'sans-serif';
+        height: 100vh;
+        margin: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        flex-direction: flex-start;
+        width: 100px;
+        height: 80px;
+        background-image: url(images/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        margin: 0;
+        position: relative;
+        z-index: 1000;
+    }
+    h1{
+        color: #5B566C;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    p{
+        text-align: center;
+        font-size: 2rem;
+    }
+    @media screen and (max-width:700px) {
+        .logo {
+            background-image: url(images/Minimmi.png);
+            width: 50px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+      main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            width:100%;
+            height:50%;
+        }
+    }
+</style>
+</html>
