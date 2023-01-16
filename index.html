@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <!-- OXYGEN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
     <link rel="stylesheet" href="bootstrap.css">
 </head>
@@ -43,17 +43,35 @@
     </header>
 
 
-    <div><img class="image_accueil" src="images/accueil.png" alt="" /></div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="http://www.dut-mmi-champs.fr/temoignages/" class="slider">
+                    <p class="actu">Actu1</p>
+                </a>
+                <img src="images/home1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" >
+                <a href="" class="slider">
+                    <p class="actu">actu2</p>
+                </a>
+                <img src="images/home2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" class="slider">
+                <a href="" >
+                    <p class="actu">actu3</p>
+                </a>
+                <img src="images/home3.jpg" class="d-block w-100" alt="...">
 
+            </div>
+        </div>
+    </div>
 
     <div class="jpo">
         <p>Venez à notre <b> Jounée Portes Ouvertes</b> <br> le <b> Samedi 04 Février 2023</b> à l'IUT de champs sur
             Marne: <b> 2 Rue Albert Einstein </b></p>
         <p> Nos éleves et professeurs seront ravies de vous accueillir et répondre à vos questions! </p>
     </div>
-
-
-
 
     <footer>
         <div class="footer">
@@ -149,12 +167,24 @@
         align-items: center;
         justify-content: center;
     }
+    <!-- slider -->
+    .active {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
 
-    .image_accueil {
+    .slider{
         width: 100%;
-        position: relative;
-        padding:20px 0;
-        height: 100%;
+        height: 10% !important;
+    }
+
+    .actu{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 25%;
     }
 
     img {
