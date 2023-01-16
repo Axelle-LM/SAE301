@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="faviconmmi.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
     <title>MMI-Anglais</title>
 </head>
 
@@ -18,28 +18,24 @@
         <a class="logo" href="index.html"><img class="logo"></a>
         <h1>Anglais</h1>
     </header>
-    
-    <main>
-        <div>
-            <iframe src="" frameborder="0">ici lien video</iframe>
-        </div>
         <div class="text">
             <p>Description par un élève : Savoir parler anglais est un atout dans le monde professionnel pour pouvoir voyager ou travailler à l’étranger. D’autant plus que l’anglais est la langue parlée du Web, sur Internet nombreux sont les sites, articles et vidéos proposés en anglais. <br><br>
             Description par un enseignant : Dans un cadre professionnel, l’anglais est une compétence essentielle sans quoi l’accès à certains postes peuvent nous être refusés. Au plus nous maîtrisons des langues, au plus nos possibilités d’étudier à l’étranger ou avec l’étranger s’accroissent. De manière plus générale l’anglais peut aussi servir dans la vie personnelle au quotidien.
             </p>
         </div>
-    </main>
     <footer>
-        <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
+        <div class="footer">
+            <a href="https://goo.gl/maps/wxo8Jg7kP3rEcCfs6" target="_blank"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a>
+        </div>
         <div class="footer">
             <div class="Infooter">
                 <a href="apropos.html"> A Propos </a>
             </div>
             <div class="Infooter">
-                <a href="https://www.instagram.com/mmi_champs/" target="_blank">Réseaux Sociaux</a>
+                <a href="https://linktr.ee/mmichamps" target="_blank">Réseaux Sociaux</a>
             </div>
             <div class="Infooter">
-                <a href="#">Coordonnées secrétariat</a>
+                <a href="coordonnee.html" target="_blank">Coordonnées secrétariat</a>
             </div>
             <div class="Infooter">
                 <a href="connexion.php">espace enseignant</a>
@@ -89,26 +85,12 @@
         width: 100%;
         margin: 0 0 5px 0;
     }
-
-    main{
-        display: flex;
-        flex-direction: row;
-        margin-top: 3%;
-        padding: 0 5%;
-    }
-
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        border: black solid 10px; /* juste pour voir les div le temps de mettre le contenu */
-    }
     .text{
         display: flex;
         align-items: flex-start;
         margin: 50px 0px;
+        width: 90%;
+        gap: 0;
     }
     p{
         font-size: 1.3rem;
@@ -144,15 +126,6 @@
         .logo {
             background-image: url(images/Minimmi.png);
             width: 50px;
-        }
-        main{
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        div{
-            width:100%;
-            height:50%;
         }
         .footer {
             display: flex;
