@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OXYGEN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin><link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
+    <title>MMI-Projet Interview</title>
+</head>
+<body>
+  <header>
+        <a href="index.html"><img class="logo"></a>
+
+        <h1>Projet Interview</h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="detail.html"> MMI en détail </a>
+            </div>
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+            <div class="nav">
+                <a class="sous_titre" href="temoignage.html">Témoignages</a>
+            </div>
+            <div class="nav">
+                <a class="sous_titre" href="international.html"> International </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <a href="" target="_blank">
+                <div class="imageLien">
+                    Voir le site ↗
+                </div>
+            </a>
+        </div>
+        <div class="text">
+            <p>description du projet<br>auteur du projet</p>
+        </div>
+    </main>
+     <footer>
+        <div class="footer">
+            <a href="https://goo.gl/maps/wxo8Jg7kP3rEcCfs6" target="_blank"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a>
+        </div>
+        <div class="footer">
+            <div class="Infooter">
+                <a href="apropos.html"> A Propos </a>
+            </div>
+            <div class="Infooter">
+                <a href="https://linktr.ee/mmichamps" target="_blank">Réseaux Sociaux</a>
+            </div>
+            <div class="Infooter">
+                <a href="coordonnee.html">Coordonnées secrétariat</a>
+            </div>
+            <div class="Infooter">
+                <a href="connexion.php">espace enseignant</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        font-family: 'Inter', 'sans-serif';
+        height: 100vh;
+        margin: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: flex-start;
+        width: 100px;
+        height: 80px;
+        background-image: url(images/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        margin: 0;
+        position: relative;
+        z-index:1000;
+    }  
+
+    h1 {
+        color: #5B566C;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    .nav {
+        width: 20%;
+        min-height: 10vh;
+        background-color: #DDD0C2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .nav:hover{
+     font-weight: 700;
+    }
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        font-size: 1.3rem;
+        font-family: 'inter';
+    }
+  footer {
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 1px;
+    }
+
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .Infooter {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+    }
+    .imageLien:hover{
+        text-decoration: underline;
+        font-size: 2.3rem;
+    }
+    .imageLien{
+        color: white;
+        font-weight: 900;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-image: url("vignetteAffiche.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        font-size: 2rem;
+        font-family: kanit;
+    }
+    @media screen and (max-width:700px) {
+      header{
+            height:350px;
+            width:100%;
+            }
+      .logo {
+            background-image: url(images/Minimmi.png);
+            width: 50px;
+            }
+       h1 {
+            font-size: 2rem;
+          }
+       nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+          }
+       .nav{
+            width: 100%;
+            min-height:55px;
+            
+          }
+        .sous_titre{
+            font-size:1.2rem;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
+          }
+      main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+        div{
+            width:100%;
+            height:50%;
+          }
+        nav {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 30px 0px;
+          }
+  }
+</style>
+</html>
