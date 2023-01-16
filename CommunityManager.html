@@ -46,7 +46,7 @@ Le community manager va avoir pour but de développer la notoriété et d’accr
 
     
 </body>
-    <style>
+     <style>
          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
     *::after {
         box-sizing: border-box;
@@ -54,14 +54,15 @@ Le community manager va avoir pour but de développer la notoriété et d’accr
     body {
         background-color: white;
         font-family: 'Inter', 'sans-serif';
-        position: absolute;
-        margin:0;
+        height: 100vh;
+        margin: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
     }
     header {
-        position: relative;
+        height: 250px;
         width: 100%;
-        /* height: 150px; */
-
     }
 
     .logo {
@@ -73,23 +74,60 @@ Le community manager va avoir pour but de développer la notoriété et d’accr
         background-size: contain;
         background-repeat: no-repeat;
         border: none;
+        position:relative;
+        z-index:1000;
     }
 
     h1 {
         color: #5B566C;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: 'Oxygen';
         position: absolute;
         font-weight: 800;
         top: 2vh;
         width: 100%;
-        margin: 0 0 5px 0;
+        margin: 0 0 5px 0 ;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+        /* position: relative; */
+        /* top: 100px; */
+    }
+
+    .nav {
+        position: relative;
+        width: 10%;
+        height: 10vh;
+        /* background-color: #DDD0C2; */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid #DDD0C2 2px;
+        font-size: 1.5rem;
+    }
+
+    .nav:hover{
+     background-color: #DDD0C2;
+     font-weight: 700;
+    }
+
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
      div:not(.footer, .Infooter){
         display: flex;
         flex-direction: column;
-        margin-top: 10%;
         padding: 0 5%;
     }
 
@@ -98,7 +136,8 @@ Le community manager va avoir pour but de développer la notoriété et d’accr
         background-color: #5B566C;
         display: flex;
         flex-direction: column;
-        
+        position:absolute;
+        bottom: 1px;
     }
 
     .footer {
