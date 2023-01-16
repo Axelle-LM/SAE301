@@ -45,6 +45,7 @@
 </body>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
     *::after {
         box-sizing: border-box;
     }
@@ -52,7 +53,7 @@
     body {
         background-color: white;
         font-family: 'Inter', 'sans-serif';
-        height: 100vh;
+        margin: 0;
     }
 
     header {
@@ -70,9 +71,9 @@
         background-repeat: no-repeat;
         border: none;
         margin: 0;
-    }
-
-    
+        position: relative;
+        z-index:1000;
+    }  
 
     h1 {
         color: #5B566C;
@@ -88,21 +89,21 @@
     .text{
         display: flex;
         align-items: flex-start;
-        margin: 50px 0px;
+        margin: 50px auto;
         width: 90%;
         gap: 0;
     }
     p{
         font-size: 1.3rem;
+        font-family: 'inter';
     }
     footer {
-        /* height: 20vh; */
         width: 100%;
         background-color: #5B566C;
         display: flex;
         flex-direction: column;
-        position: relative;
-        /* top: 20vh; */
+        position: absolute;
+        bottom: 1px;
     }
 
     .footer {
