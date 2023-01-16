@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="faviconmmi.png" type="image/x-icon">
-    <title>MMI-Hébergemnt</title>
+    <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
+    <title>MMI-Hébergement</title>
 </head>
-
 <body>
     <header>
         <a class="logo" href="index.html"><img class="logo"></a>
         <h1>Hébergement</h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="detail.html"> MMI en détail </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="temoignage.html">Témoignages</a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="international.html"> International </a>
+            </div>
+        </nav>
     </header>
-    
-    <main>
-        <div>
-            <iframe src="" frameborder="0">ici lien video</iframe>
-        </div>
         <div class="text">
             <p>Description par un élève : Adressage IP, masque, passerelle, NAT, proxy, cache Web sont des termes qui nous étaient pour certains inconnus avant d’entrer dans la formation mais ils nous sont devenus plus clair au fur et à mesure de la réalisation de Travaux Pratiques.<br><br>
             Description par un enseignant : Nous initions les élèves à l’approfondissement des connaissances réseaux et à l’administration d’hébergements web, plusieurs grands titres sont abordés au cours de ce module : les réseaux, l’installation et exploitation d’un hébergement Web, présentation des différents types d’hébergement, introduction à la sécurité.</p>
         </div>
-    </main>
     <footer>
-        <div class="footer"><a href="#"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
+        <div class="footer">
+            <a href="https://goo.gl/maps/wxo8Jg7kP3rEcCfs6" target="_blank"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a>
+        </div>
         <div class="footer">
             <div class="Infooter">
                 <a href="apropos.html"> A Propos </a>
             </div>
             <div class="Infooter">
-                <a href="https://www.instagram.com/mmi_champs/" target="_blank">Réseaux Sociaux</a>
+                <a href="https://linktr.ee/mmichamps" target="_blank">Réseaux Sociaux</a>
             </div>
             <div class="Infooter">
-                <a href="#">Coordonnées secrétariat</a>
+                <a href="coordonnee.html" target="_blank">Coordonnées secrétariat</a>
             </div>
             <div class="Infooter">
                 <a href="connexion.php">espace enseignant</a>
@@ -46,8 +57,8 @@
         </div>
     </footer>
 </body>
-
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
     *::after {
         box-sizing: border-box;
     }
@@ -55,7 +66,7 @@
     body {
         background-color: white;
         font-family: 'Inter', 'sans-serif';
-        height: 100vh;
+        margin: 0;
     }
 
     header {
@@ -73,9 +84,9 @@
         background-repeat: no-repeat;
         border: none;
         margin: 0;
-    }
-
-    
+        position: relative;
+        z-index:1000;
+    }  
 
     h1 {
         color: #5B566C;
@@ -88,38 +99,51 @@
         width: 100%;
         margin: 0 0 5px 0;
     }
-
-    main{
-        display: flex;
-        flex-direction: row;
-        margin-top: 3%;
-        padding: 0 5%;
-    }
-
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        border: black solid 10px; /* juste pour voir les div le temps de mettre le contenu */
-    }
     .text{
         display: flex;
         align-items: flex-start;
-        margin: 50px 0px;
+        margin: 50px auto;
+        width: 90%;
+        gap: 0;
+    }
+        nav {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+    }
+
+    .nav {
+        width: 20%;
+        min-height: 10vh;
+        background-color: #DDD0C2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .nav:hover{
+     font-weight: 700;
+    }
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     p{
         font-size: 1.3rem;
+        font-family: 'inter';
     }
     footer {
-        /* height: 20vh; */
         width: 100%;
         background-color: #5B566C;
         display: flex;
         flex-direction: column;
-        position: relative;
-        /* top: 20vh; */
+        position: absolute;
+        bottom: 1px;
     }
 
     .footer {
@@ -140,18 +164,29 @@
         margin: 10px;
     }
     @media screen and (max-width:700px) {
+        header{
+            height:350px;
+            width:100%;
+        }
         .logo {
             background-image: url(images/Minimmi.png);
             width: 50px;
         }
-        main{
+        h1{
+            font-size: 2rem;
+        }
+        nav{
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            gap: 1px;
         }
-        div{
-            width:100%;
-            height:50%;
+        .nav{
+            width: 100%;
+            min-height:55px;
+            
+        }
+        .sous_titre{
+            font-size:1.2rem;
         }
         .footer {
             display: flex;
@@ -161,5 +196,4 @@
         }
     }
 </style>
-
 </html>
