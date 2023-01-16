@@ -46,19 +46,19 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="http://www.dut-mmi-champs.fr/temoignages/" class="slider">
+                <a href="actualite.html" class="slider">
                     <p class="actu">Actu1</p>
                 </a>
                 <img src="images/home1.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item" >
-                <a href="" class="slider">
+                <a href="actualite.html" class="slider">
                     <p class="actu">actu2</p>
                 </a>
                 <img src="images/home2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item" class="slider">
-                <a href="" >
+                <a href="actualite.html" >
                     <p class="actu">actu3</p>
                 </a>
                 <img src="images/home3.jpg" class="d-block w-100" alt="...">
@@ -175,15 +175,20 @@ crossorigin="anonymous">
     .carousel{
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 80vh!important;
     }
+    .carousel-inner{
+        height:100%!important;
+    }
+        
     .carousel-item{
         position: relative;
         display: none;
         float: none!important;
         margin-right: 0!important;
-        width: 100%;
-        height: 100%;
+        width: 100%!important;
+        height: 100%!important;
+        transition: transform 0.3s ease-in-out!important;
     }
         
     .active {
