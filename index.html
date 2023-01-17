@@ -41,42 +41,19 @@
             </div>
         </nav>
     </header>
-
-
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="actualite.html" class="slider">
-                    <p class="actu">MMI News!</p>
-                </a>
-                <img src="images/home4.png" class="d-block w-100" alt="image de la vie mmi, lien vers actualité">
-            </div>
-            <div class="carousel-item" >
-                <a href="actualite.html" class="slider">
-                    <p class="actu">MMI News!</p>
-                </a>
-                <img src="images/home2.jpg" class="d-block w-100" alt="image de la vie mmi, lien vers actualité">
-            </div>
-            <div class="carousel-item" class="slider">
-                <a href="actualite.html" >
-                    <p class="actu">MMI News!</p>
-                </a>
-                <img src="images/home5.png" class="d-block w-100" alt="image de la vie mmi, lien vers actualité">
-            </div>
-            <div class="carousel-item" class="slider">
-                <a href="actualite.html" >
-                    <p class="actu">MMI News!</p>
-                </a>
-                <img src="images/home3.jpg" class="d-block w-100" alt="image de la vie mmi, lien vers actualité">
-            </div>
-            <div class="carousel-item" class="slider">
-                <a href="actualite.html" >
-                    <p class="actu">MMI News!</p>
-                </a>
-                <img src="images/home6.png" class="d-block w-100" alt="image de la vie mmi, lien vers actualité">
-            </div>
-            
+    
+    div class="slider-container">
+        <div class="menu">
+          <label for="slide-dot-1"></label>
+          <label for="slide-dot-2"></label>
+          <label for="slide-dot-3"></label>
         </div>
+        <input id="slide-dot-1" type="radio" name="slides" checked>
+        <div class="slide slide-1"> <a href="actualite.html">MMI News!</a> </div>
+        <input id="slide-dot-2" type="radio" name="slides">
+        <div class="slide slide-2"> <a href="actualite.html">MMI News!</a> </div>
+        <input id="slide-dot-3" type="radio" name="slides">
+        <div class="slide slide-3"> <a href="actualite.html">MMI News!</a> </div>
     </div>
 
     <div class="jpo">
@@ -184,50 +161,78 @@ crossorigin="anonymous">
         justify-content: center;
     }
     <!-- slider -->
-    .carousel{
-        position: relative;
-        width: 100%;
-        height: 80vh!important;
-    }
-    .carousel-inner{
-        height:100%!important;
-    }
-        
-    .carousel-item{
-        position: relative;
-        display: none;
-        float: none!important;
-        margin-right: 0!important;
-        width: 100%!important;
-        height: 100%!important;
-        transition: transform 0.3s ease-in-out!important;
-    }
-        
-    .active {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-
-    .slider{
-        width: 100%;
-        height: 10% !important;
-    }
-
-    .actu{
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 25%;
-        font-weight: 800;
-        font-size: 2rem;
-    }
-
     img {
+        max-width: 100%;
+      }
+      .slider-container {
+        height: 100%;
         width: 100%;
-        height: 60%;
-    }
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+      .slide>a{
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+        background-color: rgba(138, 137, 137, 0.2);
+        border-radius: 20px;
+        padding: 1px 10px;
+      }
+      .slide>a:hover{
+        font-size: 3.5rem;
+      }
+      .menu {
+        position: absolute;
+        left: 0;
+        z-index: 900;
+        width: 100%;
+        /* bottom: 0; */
+        top: 65%;
+        
+      }
+      .menu label {
+        cursor: pointer;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border-radius: 50px;
+        margin: 0 0.2em 1em;
+      }
+      .menu label:hover,
+      .menu label:focus {
+        background: #1c87c9;
+      }
+      .slide {
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 10;
+        padding: 8em 1em 0;
+        background-size: cover;
+        background-position: 50% 50%;
+        transition: left 0s 0.75s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      [id^="slide"]:checked + .slide {
+        left: 0;
+        z-index: 100;
+        transition: left 0.65s ease-out;
+      }
+      .slide-1 {
+        background-image: url("home1.jpg");
+      }
+      .slide-2 {
+        background-image: url("home3.jpg");
+      }
+      .slide-3 {
+        background-image: url("home6.png");
+      }
 
     div {
         display: flex;
