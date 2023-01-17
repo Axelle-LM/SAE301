@@ -14,7 +14,7 @@
         <textarea type="text" name="infos_metier" id="infos_metier" width="200" height="250"></textarea>
     </div>
     <div class="metier">
-        <label for="id_cat">Entrez l'id de la catégorie (1 : audiovisuel / 2 : dévelopemment / 3 : marketing </label>
+        <label for="id_cat">Entrez l'id de la catégorie (1 : audiovisuel / 2 : dévelopemment / 3 : marketing) </label>
         <input type="text" name="id_cat" id="id_cat">
     </div>
     <div class="metier">
@@ -31,3 +31,31 @@
     $stmt = $db->prepare($query);
     $stmt->execute();
 ?>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+*::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex!important;
+    flex-direction: column!important;
+    align-items:center!important;
+}
+div{
+    min-width:20%;
+    display:flex;
+    flex-direction: column;
+}
+input{
+    min-width: 100%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+    text-align: center;
+}
+</style>
