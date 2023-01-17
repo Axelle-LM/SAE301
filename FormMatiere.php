@@ -62,108 +62,27 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
-  <style>
-       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
-*::after {
+  <a href="menu-admin.html"> Menu administrateur </a>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
     box-sizing: border-box;
 }
-    body {
-        background-color: white;
-        font-family: 'Inter', 'sans-serif';
-        height:100%;
-        display:flex;
-        flex-direction:column;
-        margin: 0;
-    }
-    header {
-        width: 100%;
-        
-    }
-    .logo {
-        display: flex;
-        flex-direction: flex-start;
-        width: 100px;
-        height: 80px;
-        background-image: url(images/faviconmmi.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        border: none;
-        position: relative;
-        z-index: 1000;
-    }
-    h1 {
-        color: #5B566C;
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
         text-align: center;
-        font-size: 3rem;
-        font-family: 'Oxygen';
-        position: absolute;
-        font-weight: 800;
-        top: 2vh;
-        width: 100%;
-        margin: 0 0 5px 0 ;
-         footer {
-        width: 100%;
-        background-color: #5B566C;
-        display: flex;
-        flex-direction: column;
-    }
-      h2{
-      font-family:'inter';
-     }
-      .card{
-        display: flex;
-        flex-direction: row;}
-     footer {
-        width: 100%;
-        background-color: #5B566C;
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .footer {
-        padding: 10px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.5rem;
-        text-align:center;
-    }
-    .footer>a:hover{
-        color:white;
-    }
-    .Infooter{
-        padding: 5px;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    a:hover{
-        color: white;
-        font-weight:900;
-    }
-        @media screen and (max-width:800px) {
-        .logo{
-            background-image:url(images/Minimmi.png);
-            width: 50px;
-        }
-        header{
-            height:350px;
-            width:100%;
-        }
-        h1{
-            font-size: 2rem;
-        }
-          .card{
-            display:flex;
-            flex-direction: column;
-          }
-        .footer{
-            display: flex;
-            flex-direction: column;
-            font-size: 1.2rem;
-            padding: 5px;
-        }
-    }
+}
 </style>
