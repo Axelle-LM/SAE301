@@ -12,7 +12,26 @@
     <title>MMI-UXDesigner</title>
 </head>
 <body>
-<h1> UX Designer </h1>
+    <header>
+        <h1> UX Designer </h1>
+       <nav>
+            <div class="nav">
+                <a class="sous_titre" href="detail.html"> MMI en détail </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="temoignage.html">Témoignages</a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="international.html"> International </a>
+            </div>
+        </nav>
+    </header>
         <div class="text">
             <p> L’UX Designer est un créateur de structures d’interfaces dont l’objectif principal va être de prendre en compte l’expérience client afin de rendre la navigation d’une plateforme numérique ergonomique et la plus agréable possible. Pour ce faire l’UX Designer va devoir faire régulièrement de la veille informatique pour se tenir au courant des actualités, ce qui va lui permettre de l’aider à mieux concevoir les futurs produits et services. À ne pas confondre avec l’UI Designer qui lui va s'occuper de la partie esthétique en habillant le site.<br><br>
                 Compétences requises :
@@ -62,7 +81,6 @@
         flex-direction: column;
     }
     header {
-        height: 250px;
         width: 100%;
     }
 
@@ -156,7 +174,7 @@
         text-decoration: none;
         color: white;
     }
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         .logo {
             background-image: url(images/Minimmi.png);
             width: 50px;
@@ -164,6 +182,19 @@
         
         h1 {
             font-size: 2rem;
+        }
+         nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        .nav{
+            width: 100%;
+            min-height:55px;
+
+        }
+        .sous_titre{
+            font-size:1.2rem;
         }
    
         .footer {
