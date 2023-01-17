@@ -9,10 +9,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
-    <title>MMI-UXDesign</title>
+    <title>MMI-Chef de projet</title>
 </head>
 <body>
-<h1> Chef de projet web </h1>
+    <header>
+        <h1> Chef de projet web </h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="detail.html"> MMI en détail </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="temoignage.html">Témoignages</a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="international.html"> International </a>
+            </div>
+        </nav>
+    </header>
         <div class="text">
             <p> Le chef de projet web dispose d’un vaste champ d’activités depuis la création, jusqu’à la gestion en passant par le développement de projets. Il s’occupe de l’analyse des besoins et de l’élaboration du cahier des charges tout en veillant sur le respect des délais, du budget et de la qualité de production. Tout au long du projet, c’est lui qui va coordonner les différentes parties prenantes et faire office d’interface entre les équipes techniques, de création et de production. <br><br>
                 Compétences requises :
@@ -165,6 +184,19 @@
         
         h1 {
             font-size: 2rem;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        .nav{
+            width: 100%;
+            min-height:55px;
+            
+        }
+        .sous_titre{
+            font-size:1.2rem;
         }
    
         .footer {
