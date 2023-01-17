@@ -1,5 +1,5 @@
 <?php $db=new PDO('mysql:host=localhost;dbname=nigon_test;port=3306;charset=utf8', 'nigon', 'h2-MT6r6auTUcPJ'); ?>
-
+<h1>Ajouter un projet étudiant</h1>
 <form action="" method="post">
     <div>
         <label for="nom_proj">Entrez le nom du projet : </label>
@@ -71,3 +71,32 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
+<a href="menu-admin.html"> Menu administarteur </a>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+div{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+    text-align: center;
+}
+</style>
