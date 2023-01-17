@@ -79,6 +79,7 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
+<a href="menu-admin.html"> Menu administrateur </a>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
     *::after {
