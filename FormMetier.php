@@ -1,6 +1,6 @@
 <?php $db=new PDO('mysql:host=localhost;dbname=nigon_test;port=3306;charset=utf8', 'nigon', 'h2-MT6r6auTUcPJ'); ?>
 
-<h3>Ajouter un métier</h3>
+<h1>Ajouter un métier</h1>
 <form action="" method="post">
 <div class="metier">
         <label for="nom_metier">Entrez le nom du métier : </label>
@@ -15,7 +15,7 @@
         <textarea type="text" name="infos_metier" id="infos_metier" width="200" height="250"></textarea>
     </div>
     <div class="metier">
-        <label for="id_cat">Entrez l'id de la catégorie (1 : audiovisuel / 2 : dévelopemment / 3 : marketing </label>
+        <label for="id_cat">Entrez l'id de la catégorie (1 : audiovisuel / 2 : dévelopemment / 3 : marketing) </label>
         <input type="text" name="id_cat" id="id_cat">
     </div>
     <div class="metier">
@@ -36,7 +36,7 @@
     }
 ?>
 
-<h3>Supprimer un métier</h3>
+<h1>Supprimer un métier</h1>
 <?php
 $stmt2 = $db -> query ("SELECT * FROM sae301_metier");
 $result = $stmt2 -> fetchall();
