@@ -1,5 +1,5 @@
 <?php $conn=new PDO('mysql:host=localhost;dbname=imdb;port=3306;charset=utf8', 'root', ''); ?>
-
+<h1>Inscription enseignants</h1>
 <form action="" method="post" class="inscription">
 
 <div class="inscription">
@@ -47,3 +47,32 @@
         echo "Vous ne pouvez pas poster si vous ne faite pas partie de l'équipe enseignante";
     }
 ?>
+<a href="menu-admin.html" Menu administrateur </a>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+div{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+    text-align: center;
+}
+</style>
