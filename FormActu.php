@@ -10,7 +10,7 @@
     
 
 ?>
-<h3> Ajouter une actualité </h3>
+<h1> Ajouter une actualité </h1>
 <form method="post">
 
     <label>Titre:</label><br>
@@ -79,3 +79,26 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+        text-align: center;
+}
+</style>
