@@ -66,3 +66,32 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
+<a href="menu-admin.html"> Menu administrateur</a>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+div{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+    text-align: center;
+}
+</style>
