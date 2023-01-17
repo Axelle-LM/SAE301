@@ -12,7 +12,26 @@
     <title>MMI-Web Designer</title>
 </head>
 <body>
-<h1> Web Designer </h1>
+    <header>
+        <h1> Web Designer </h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="detail.html"> MMI en détail </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="temoignage.html">Témoignages</a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="international.html"> International </a>
+            </div>
+        </nav>
+    </header>
         <div class="text">
             <p> Le webdesigner conçoit et réalise l’identité visuelle d’un site internet pour lequel il crée la plupart des éléments graphiques (illustrations, bannières, animations) selon les désirs du client et en fonction du public visé. Pour valoriser l’image d’une entreprise, il intervient sur l’ergonomie du site, le mode de navigation et l’arborescence.<br><br>
                 Compétences requises :
@@ -20,11 +39,6 @@
 - Savoir maîtriser les outils de design graphique
 - Savoir utiliser les outils informatiques d’intégration de sites 
 - Bonne connaissance des pratiques ergonomiques
-
-
-
-
-
 </p>
         </div>
 
@@ -63,7 +77,6 @@
         flex-direction: column;
     }
     header {
-        height: 250px;
         width: 100%;
     }
 
@@ -157,7 +170,7 @@
         text-decoration: none;
         color: white;
     }
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:800px) {
         .logo {
             background-image: url(images/Minimmi.png);
             width: 50px;
@@ -165,6 +178,19 @@
         
         h1 {
             font-size: 2rem;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        .nav{
+            width: 100%;
+            min-height:55px;
+
+        }
+        .sous_titre{
+            font-size:1.2rem;
         }
    
         .footer {
