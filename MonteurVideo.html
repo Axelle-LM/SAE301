@@ -9,10 +9,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="images/faviconmmi.png" type="image/x-icon">
-    <title>MMI-UXDesign</title>
+    <title>MMI-Monteur Vidéo</title>
 </head>
 <body>
-<h1> Monteur vidéo </h1>
+    <header>
+        <h1> Monteur vidéo </h1>
+        <nav>
+            <div class="nav">
+                <a class="sous_titre" href="detail.html"> MMI en détail </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="temoignage.html">Témoignages</a>
+            </div>
+
+            <div class="nav">
+                <a class="sous_titre" href="international.html"> International </a>
+            </div>
+        </nav>
+    </header>
         <div class="text">
             <p> Le monteur vidéo va être capable à partir d’animations, d’illustrations, de contenus audio et vidéo de mettre en image plusieurs éléments audiovisuels pour en faire une vidéo diffusée sur Internet ou sur d’autres supports de communication. Pour pouvoir créer un contenu de qualité, le monteur vidéo se doit de connaître les techniques de montage <br><br>
                 Compétences requises :
@@ -60,7 +79,6 @@
         flex-direction: column;
     }
     header {
-        height: 250px;
         width: 100%;
     }
 
@@ -162,6 +180,19 @@
         
         h1 {
             font-size: 2rem;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        .nav{
+            width: 100%;
+            min-height:55px;
+            
+        }
+        .sous_titre{
+            font-size:1.2rem;
         }
    
         .footer {
