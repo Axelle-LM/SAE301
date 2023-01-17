@@ -1,5 +1,5 @@
 <?php $conn =new PDO('mysql:host=localhost;dbname=imdb;port=3306;charset=utf8', 'root', ''); ?>
-
+<h1>Connexion espace enseignant</h1>
 <?php
 
     if(explode("@", $_POST['mail'])[1] == "univ-eiffel.fr"){
@@ -43,3 +43,31 @@
 ?>
 
 <?php endif; ?>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+div{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+    text-align: center;
+}
+</style>
