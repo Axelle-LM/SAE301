@@ -9,7 +9,7 @@
     $db=new PDO('mysql:host=localhost;dbname=imdb;port=3306;charset=utf8', 'root', '');
     $stmt=$db->query("INSERT INTO sae301_actualite VALUES ('NULL','$titre', '$auteur', '$date', '$img', '$texte')");?>
 <html>
-<h3> Actualité </h3>
+<h1> Actualité </h1>
 <form method="post">
 
     <label>Titre:</label><br>
@@ -27,4 +27,27 @@
 
     <input type="submit" value="Submit">
 </form>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+        text-align: center;
+}
+</style>
 </html>
