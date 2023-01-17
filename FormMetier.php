@@ -1,6 +1,6 @@
 <?php $db=new PDO('mysql:host=localhost;dbname=nigon_test;port=3306;charset=utf8', 'nigon', 'h2-MT6r6auTUcPJ'); ?>
 
-<h3>Ajouter un métier</h3>
+<h1>Ajouter un métier</h1>
 <form action="" method="post">
 <div class="metier">
         <label for="nom_metier">Entrez le nom du métier : </label>
@@ -15,7 +15,7 @@
         <textarea type="text" name="img_metier" id="img_metier" width="200" height="250"></textarea>
     </div>
     <div class="metier">
-        <label for="id_cat">Entrez l'id de la catégorie (1 : audiovisuel / 2 : dévelopemment / 3 : marketing </label>
+        <label for="id_cat">Entrez l'id de la catégorie (1 : audio-visuel / 2 : dévelopemment / 3 : communication) </label>
         <input type="text" name="id_cat" id="id_cat">
     </div>
     <div class="metier">
@@ -36,7 +36,7 @@
     }
 ?>
 
-<h3>Supprimer un métier</h3>
+<h1>Supprimer un métier</h1>
 <?php
 $stmt2 = $db -> query ("SELECT * FROM sae301_metier");
 $result = $stmt2 -> fetchall();
@@ -66,3 +66,27 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
+<a href="menu-admin.html"> Menu administrateur </a>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+input{
+    min-width: 20%;
+}
+h1{
+    font-size: 2rem;
+    font-family:'oxygen';
+    color: #5B566C;
+        text-align: center;
+}
+</style>
