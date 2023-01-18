@@ -15,7 +15,7 @@
     <title>MMI-Métiers</title>
 <body>
     <header>
-        <a href="index.html"><img class="logo"></a>
+        <a class="logo" href="index.html"><img class="logo"></a>
 
         <h1> Des métiers d'avenir</h1>
         <nav>
@@ -300,7 +300,6 @@
             font-size: 1.2rem;
             padding: 5px;
         }
-
     }
 </style>
 </html>
