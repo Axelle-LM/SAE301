@@ -62,19 +62,22 @@ foreach ($result as $matiere){
         
         <section class="projet">
             
-            <div class="card">
+            
             <?php 
             $stmt2 = $db -> query ('SELECT * FROM sae301_projet_etudiant');
             $result2 = $stmt2 -> fetchall();
 
             foreach ($result2 as $projet){
             echo "
-                <a href='page_projet.php?id={$projet["id_proj"]}'><img src='{$projet["img_proj"]}'>
-                    <div>{$projet["nom_proj"]}</div>
-                </a>";
+                <div class="card">
+                    <a href='page_projet.php?id={$projet["id_proj"]}'><img src='{$projet["img_proj"]}'>
+                        <div>{$projet["nom_proj"]}</div>
+                    </a>
+                </div>
+                ";
             };?>
                 
-            </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+            
             
         </section>
     </main>
@@ -345,5 +348,4 @@ foreach ($result as $matiere){
         }
     }
 </style>
-
 </html>
