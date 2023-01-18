@@ -18,6 +18,7 @@ $result = $stmt -> fetchall();
 </head>
 <body>
 <header>
+    <a href="index.html"><img class="logo"></a>
         <h1><?php echo $result[0]["nom_metier"]?></h1>
        <nav>
             <div class="nav">
@@ -96,7 +97,7 @@ $result = $stmt -> fetchall();
         text-align: center;
         font-size: 3rem;
         font-family: 'Oxygen';
-        position: absolute;
+        /*position: absolute;*/
         font-weight: 800;
         top: 2vh;
         width: 100%;
