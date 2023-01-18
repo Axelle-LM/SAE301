@@ -18,7 +18,7 @@ $result = $stmt -> fetchall();
 </head>
 <body>
 <header>
-    <a href="index.html"><img class="logo"></a>
+    <a class="logo" href="index.html"><img class="logo"></a>
         <h1><?php echo $result[0]["nom_metier"]?></h1>
        <nav>
             <div class="nav">
