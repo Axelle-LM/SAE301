@@ -67,13 +67,12 @@ foreach ($result as $matiere){
             $stmt2 = $db -> query ('SELECT * FROM sae301_projet_etudiant');
             $result2 = $stmt2 -> fetchall();
 
-foreach ($result2 as $projet){
-    echo "
-            <a href='page_projet.php?id={$projet["id_proj"]}'><img src='{$projet["img_proj"]}'></a>
-                <div>{$projet["nom_proj"]}</div>
-                </a>
-        ";
-       }?>
+            foreach ($result2 as $projet){
+            echo "
+                <a href='page_projet.php?id={$projet["id_proj"]}'><img src='{$projet["img_proj"]}'>
+                    <div>{$projet["nom_proj"]}</div>
+                </a>";
+            };?>
                 
             </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
             
@@ -219,7 +218,7 @@ foreach ($result2 as $projet){
         flex-wrap: wrap;
         justify-content: center;
     }
-    .projet {
+    section>.projet {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -326,12 +325,13 @@ foreach ($result2 as $projet){
             align-items: center;
             justify-content: center;
         }
-        .projet {
+        section>.projet {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 10px;
             align-content: center;
+            width:100%;
         }
         .card{
             width: 100%;
