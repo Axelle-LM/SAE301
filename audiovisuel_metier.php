@@ -67,4 +67,240 @@
             }";?>
     </div>
 </body>
+     <style>
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        font-family: 'Inter', 'sans-serif';
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+
+    }
+
+    .separateur {
+        width: 70%;
+        height: 2px;
+        margin: auto;
+        background-color: #5B566C;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: flex-start;
+        width: 100px;
+        height: 80px;
+        background-image: url(images/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        position: relative;
+        z-index: 1000;
+    }
+
+    h1 {
+        color: #5B566C;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Oxygen';
+        font-weight: 800;
+        width: 100%;
+        margin: 20px 0;
+        position: absolute;
+        top: 0vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 70px 0px  50px 0;
+        /* position: relative; */
+        /* top: 100px; */
+    }
+
+    .nav {
+        position: relative;
+        width: 20%;
+        height: 10vh;
+        /* background-color: #DDD0C2; */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid #DDD0C2 2px;
+        font-size: 1.5rem;
+    }
+
+    .nav:hover {
+        background-color: #DDD0C2;
+        font-weight: 700;
+    }
+
+    .tri {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+    }
+
+    .categorie {
+        width: 10%;
+        min-height: 10vh;
+        background-color: #5B566C;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size:1.2rem;
+        padding: 0px 40px
+    }
+
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+        /* position: relative; */
+        top: 150px;
+
+    }
+
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .titre {
+        color: #766A9D;
+        text-align: center;
+        font-size: 50px;
+    }
+
+
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 50px;
+    }
+
+    img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .container_image {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        margin:auto;
+    }
+    img:hover{
+        content: 'blabla';
+    }
+    
+    footer {
+        /* height: 20vh; */
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 10vh;
+    }
+
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .Infooter {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+    @media screen and (max-width:800px) {
+        .logo {
+            background-image: url(images/Minimmi.png);
+            width: 50px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+
+        .nav {
+            width: 100%;
+            min-height:55px;
+
+        }
+        .categorie{
+            width:100%;
+            min-height:55px;
+            padding:0;
+        }
+        
+        .sous_titre{
+            font-size:1.2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+
+    }
+</style>
 </html>
