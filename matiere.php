@@ -24,7 +24,7 @@
 
         <nav>
             <div class="nav">
-                <a class="sous_titre" href="metier.html">Les métiers après MMI </a>
+                <a class="sous_titre" href="metier.php">Les métiers après MMI </a>
             </div>
 
             <div class="nav">
@@ -49,61 +49,37 @@ foreach ($result as $matiere){
     echo "
      
             <a href='page_matiere.php?id={$matiere["id_matiere"]}'>
-                <div class="matiere">{$matiere["nom_matiere"]}</div>
-            </a>
+                <div class='matiere'>{$matiere["nom_matiere"]}</div>
+            </a>";
        
-       }";?>
+       }?>
     </section>
 <h3> Les réalisations des étudiant.e.s </h3>
         <p>
             Au cours de ces 3 années de BUT, les étudiants apprennent à se surpasser dans des travaux individuels mais aussi dans des travaux de groupe. Voici une sélection de projets et SAÉ (situation d’apprentissage et évaluation) sur lesquels les MMI de 1ère et 2ème année ont pu travailler. Avec la réforme et le passage du DUT (formation sur 2 ans) en BUT (formation sur 3 ans), nous ne sommes pas en mesure d’afficher ceux des troisième années qui apparaîtront en 2023-2024.
             Ici vous pourrez visualiser un top 3 des projets réalisés par année.
         </p>
-        <h2>1e année</h2>
+        
         <section class="projet">
+            
             <div class="card">
-                <a href="projetResaweb.html">
-                    <div>Resaweb</div>
-                    <div><img src="images/vignetteResaweb.png" alt="vignette du projet resaweb"></div>
-                </a>    
-            </div> <!-- PENSEZ A MODIFIER TITRE + ALT -->
-            <div class="card">
-                <a href="projetInterview.html">
-                    <div>Interview</div>
-                    <div><img src="images/vignetteInterview.jpg" alt="vignette du projet intreview"></div>
+            <?php 
+            $stmt2 = $db -> query ('SELECT * FROM sae301_projet_etudiant');
+            $result2 = $stmt2 -> fetchall();
+
+foreach ($result2 as $projet){
+    echo "
+            <a href='page_projet.php?id={$projet["id_proj"]}'><img src='{$projet["img_proj"]}'></a>
+                <div>{$projet["nom_proj"]}</div>
                 </a>
+        ";
+       }?>
+                
             </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
-            <div class="card">
-                <a href="projetRefonte">
-                    <div>Refonte UX</div>
-                    <div><img src="images/vignetteRefonte.png" alt="vignette du projet refonte UX"></div>
-                </a>
-            </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
+            
         </section>
     </main>
-        <h2>2e année</h2>
-    <main>
-        <section class="projet">
-            <div class="card">
-                <a href="projetPodcast.html">
-                <div>Podcast</div>
-                <div><img src="images/vignettePodcast.jpg" alt=" vignette du projet podcast"></div>
-                </a>
-            </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
-            <div class="card">
-                <a href="projetAffiche.html">
-                <div>Campagne publicitaire</div>
-                <div><img src="images/vignetteAffiche.jpg" alt="vignette du projet de campagne publicitaire"></div>
-                </a>
-            </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
-            <div class="card">
-                <a href="projetCV">
-                <div>CV Vidéo</div>
-                <div><img src="images/vignetteCV.jpg" alt="vignette du projet CV vidéo"></div>
-                </a>
-            </div><!-- PENSEZ A MODIFIER TITRE + ALT -->
-        </section>
-    </main>
+    
     <footer>
         <div class="footer">
             <a href="https://goo.gl/maps/wxo8Jg7kP3rEcCfs6" target="_blank"> 2 rue Albert Einstein, Champ-Sur-Marne, 77420 </a></div>
