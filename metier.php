@@ -57,21 +57,20 @@
         </nav>
         
     </header>
-
-<?php
-$db=new PDO('mysql:host=localhost;dbname=nigon_test;port=3306;charset=utf8', 'nigon', 'h2-MT6r6auTUcPJ');
-$stmt = $db -> query ('SELECT * FROM sae301_metier');
-$result = $stmt -> fetchall();
-
-foreach ($result as $metier){
-    echo "
     <div class="container">
+
+        <?php
+        $db=new PDO('mysql:host=localhost;dbname=nigon_test;port=3306;charset=utf8', 'nigon', 'h2-MT6r6auTUcPJ');
+        $stmt = $db -> query ('SELECT * FROM sae301_metier');
+        $result = $stmt -> fetchall();
+
+        foreach ($result as $metier){
+            echo "
             <div class="container_image">
-                <a href='page_metier.php?id={$metier["id_metier"]}'><img src='<?php {$metier["img_metier"]};?' id="crea UXD" alt="métier UX designer"></a>
+                <a href='page_metier.php?id={$metier["id_metier"]}'><img src='<{$metier["img_metier"]}'></a>
             </div>
-            </div>
-            }
-?>
+            
+            }";?>
 
     </div>
 <footer>
@@ -235,6 +234,7 @@ foreach ($result as $metier){
     .container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 50px;
         margin: 50px;
     }
