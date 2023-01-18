@@ -1,4 +1,4 @@
-.boldtext :nth-child(2n) {
+.boldtext {
   font-weight: bold;
   border: none;
   background-color: #e1e7df;
