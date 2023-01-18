@@ -39,7 +39,7 @@
     <main>
         <p> MMi est une formation pluridisciplinaire, dans laquelle les étudiants découvrent de nombreuses matières et expriment leurs compétences 
             avant de se spécialiser au semestre 4 dans l’un des deux parcours proposés par l’IUT.</p>
-
+<section>
 <?php
 $db=new PDO('mysql:host=localhost;dbname=nigon_test;port=3306;charset=utf8', 'nigon', 'h2-MT6r6auTUcPJ');
 $stmt = $db -> query ('SELECT * FROM sae301_matiere');
@@ -47,12 +47,13 @@ $result = $stmt -> fetchall();
 
 foreach ($result as $matiere){
     echo "
-     <section>
+     
             <a href='page_matiere.php?id={$matiere["id_matiere"]}'>
                 <div class="matiere">{$matiere["nom_matiere"]}</div>
             </a>
-       </section>
+       
        }";?>
+    </section>
 <h3> Les réalisations des étudiant.e.s </h3>
         <p>
             Au cours de ces 3 années de BUT, les étudiants apprennent à se surpasser dans des travaux individuels mais aussi dans des travaux de groupe. Voici une sélection de projets et SAÉ (situation d’apprentissage et évaluation) sur lesquels les MMI de 1ère et 2ème année ont pu travailler. Avec la réforme et le passage du DUT (formation sur 2 ans) en BUT (formation sur 3 ans), nous ne sommes pas en mesure d’afficher ceux des troisième années qui apparaîtront en 2023-2024.
