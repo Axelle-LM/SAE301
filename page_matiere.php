@@ -60,4 +60,144 @@ $result = $stmt -> fetchall();
             </div>
         </div>
     </footer>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        font-family: 'Inter', 'sans-serif';
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: flex-start;
+        width: 100px;
+        height: 80px;
+        background-image: url(images/faviconmmi.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        margin: 0;
+        position: relative;
+        z-index:1000;
+    }  
+
+    h1 {
+        color: #5B566C;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Oxygen';
+        position: absolute;
+        font-weight: 800;
+        top: 2vh;
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    .text{
+        display: flex;
+        align-items: flex-start;
+        margin: 50px auto;
+        width: 90%;
+        gap: 0;
+    }
+        nav {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px;
+    }
+
+    .nav {
+        width: 20%;
+        min-height: 10vh;
+        background-color: #DDD0C2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .nav:hover{
+     font-weight: 700;
+    }
+    .sous_titre {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        font-size: 1.3rem;
+        font-family: 'inter';
+    }
+    footer {
+        width: 100%;
+        background-color: #5B566C;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 1px;
+    }
+
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .Infooter {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+    }
+    @media screen and (max-width:700px) {
+        header{
+            height:350px;
+            width:100%;
+        }
+        .logo {
+            background-image: url(images/Minimmi.png);
+            width: 50px;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+        }
+        .nav{
+            width: 100%;
+            min-height:55px;
+            
+        }
+        .sous_titre{
+            font-size:1.2rem;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+    }
+</style>
 </html>
