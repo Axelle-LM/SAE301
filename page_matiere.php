@@ -18,8 +18,8 @@ $result = $stmt -> fetchall();
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="logo"></a>
-        <h2><?php echo $result[0]["nom_matiere"]?></h2>
+        <a class="logo" href="index.html"><img class="logo"></a>
+        <h1><?php echo $result[0]["nom_matiere"]?></h1>
        <nav>
             <div class="nav">
                 <a class="sous_titre" href="detail.html"> MMI en détail </a>
@@ -56,7 +56,7 @@ $result = $stmt -> fetchall();
               <a href="coordonnee.html">Coordonnées secrétariat</a>
             </div>
             <div class="Infooter">
-               <a href="connexion.html">espace enseignant</a>
+               <a href="connexion.php">espace enseignant</a>
             </div>
         </div>
     </footer>
