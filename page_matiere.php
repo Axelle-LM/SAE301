@@ -18,6 +18,7 @@ $result = $stmt -> fetchall();
 </head>
 <body>
     <header>
+        <a href="index.html"><img class="logo"></a>
         <h2><?php echo $result[0]["nom_matiere"]?></h2>
        <nav>
             <div class="nav">
