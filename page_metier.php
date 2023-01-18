@@ -191,7 +191,9 @@ $result = $stmt -> fetchall();
         .sous_titre{
             font-size:1.2rem;
         }
-   
+        footer{
+            position:relative;
+        }
         .footer {
             display: flex;
             flex-direction: column;
