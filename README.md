@@ -3,10 +3,6 @@ Refonte site MMI Champs
 
 url du site : http://saesitemmi.nigon.butmmi.o2switch.site/
 
-Pour se connecter à l'espace enseignant : 
-identifiant : admin@univ-eiffel.fr
-mot de passe : admin
-
 Initialement 4 étudiants, nous avons fini le projet à 3 étudiantes. Le projet de la SAÉ 301 nous aura permis de travailler ensemble entre profils différents. Ce pourquoi nous avons toutes été en mesure de trouver notre place car nos tâches arrivaient à se compléter pour au final avoir conçu le redesign du site du BUT MMI de Champs-sur-Marne, fonctionnel dans l’ensemble.
 
 Nous avons tenté de mettre le site sur un hébergeur autre que o2switch, qui est ovh, cependant suite à des problèmes de serveurs sans fin nous avons abandonné et sommes allées sur o2switch afin de garantir un rendu correcte.
